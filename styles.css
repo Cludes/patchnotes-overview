@@ -235,3 +235,25 @@ a.patch-card:hover { text-decoration: none; transform: translateY(-3px); border-
 .pc-stats .r b { color: var(--nerf); }
 .pc-cta { font-weight: 700; color: var(--accent); font-size: 14px; margin-top: 6px; }
 .pc-cta.muted { color: var(--faint); font-weight: 600; }
+
+/* ---- Net change calculator ---- */
+.calc-card { padding: 20px 22px; }
+.calc-controls { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.calc-controls label { font-weight: 700; font-size: 14px; color: var(--dim); }
+#spec-select { flex: 1; max-width: 360px; background: var(--panel-2); color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 14px; font-weight: 600; }
+#spec-select:focus { outline: none; border-color: var(--accent); }
+.calc-base { margin: 0 0 14px; padding: 11px 14px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; font-size: 14px; color: var(--dim); }
+.calc-base b { font-variant-numeric: tabular-nums; }
+.calc-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 10px 0; border-top: 1px solid var(--line-soft); flex-wrap: wrap; }
+.calc-row:first-child { border-top: 0; }
+.cr-name { font-weight: 600; font-size: 14px; }
+.cr-pct { font-variant-numeric: tabular-nums; }
+.cr-input { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+input.wt { width: 74px; background: var(--panel-2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; font-size: 14px; font-variant-numeric: tabular-nums; text-align: right; }
+input.wt:focus { outline: none; border-color: var(--accent); }
+.calc-result { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 16px; padding-top: 16px; border-top: 2px solid var(--line); }
+.calc-result-lbl { font-weight: 700; font-size: 15px; }
+.calc-result-sub { color: var(--faint); font-size: 12px; margin-top: 3px; }
+.net-num { font-size: 38px; font-weight: 850; line-height: 1; letter-spacing: -1px; font-variant-numeric: tabular-nums; color: var(--text); }
+.net-num.buff { color: var(--buff); }
+.net-num.nerf { color: var(--nerf); }
