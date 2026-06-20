@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Patch 12.1 "Curse of Ula'tek" Class Changes - Overview &amp; Math</title>
+<meta name="description" content="Every class and spec change in the first WoW Midnight Patch 12.1 PTR build, with exact old/new values, computed percentages, a cooldown-squish scorecard, biggest buffs and nerfs, and reroll guidance." />
+<meta name="color-scheme" content="dark" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="toc"><div class="wrap" id="toc"></div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">World of Warcraft: Midnight &middot; PTR Development Notes</div>
+    <h1>Patch 12.1 &ldquo;Curse of Ula&rsquo;tek&rdquo;
+      <span class="sub">Every class change from the first 12.1 PTR build, with the math worked out for every number, a cooldown-squish scorecard, and a reroll read.</span>
+    </h1>
+    <div class="disclaimer">
+      <b>Read this first.</b> This is a <b>first PTR build</b> and values will change. Percentages are computed directly from Blizzard&rsquo;s
+      stated old &rarr; new values using <code>(new - old) / old</code>, so each line is exact. The &ldquo;biggest buffs/nerfs&rdquo; and reroll
+      sections are an <b>interpretation of the direction and size</b> of those changes, not sims. Blizzard&rsquo;s stated intent for most DPS
+      specs is roughly <b>net-neutral total damage</b> with a flatter profile, so a big cooldown nerf does not always mean a real DPS loss.
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- GLOBAL -->
+  <section id="global">
+    <div class="sec-head"><h2>The three structural changes</h2></div>
+    <ul class="glist" id="global-list"></ul>
+  </section>
+
+  <!-- SUMMARY -->
+  <section id="summary">
+    <div class="sec-head"><h2>At a glance</h2><span class="kicker">336 change lines</span></div>
+    <div class="stats" id="stats"></div>
+    <p class="small muted" style="margin-top:11px">Counts are every individual change line, tagged by gameplay direction. Most &ldquo;nerf&rdquo;
+    lines are paired with a compensating steady-state buff on the same spec, which is why the totals lean green.</p>
+  </section>
+
+  <!-- SCORECARD -->
+  <section id="scorecard">
+    <div class="sec-head"><h2>The cooldown-squish scorecard</h2><span class="kicker">redistribution, not loss</span></div>
+    <p class="lead">The headline is &ldquo;DPS cooldowns nerfed,&rdquo; but for these specs it is a <b>redistribution</b>: the burst window is
+    cut and the budget is pushed into filler. Ranked by how hard the cooldown window was reduced. Net intent is ~flat.</p>
+    <p class="small muted" style="margin:-8px 0 16px">This table lists <b>only the specs that got the burst-to-steady treatment</b>, not all classes.
+    Hunter, Priest, Warlock and Warrior have no cooldown-squished spec this build. Every class and spec is in
+    <a href="#all">the full breakdown below</a>.</p>
+    <div class="tbl-wrap">
+      <table class="scorecard">
+        <thead><tr><th>Spec</th><th>Burst window cut</th><th>Steady-state buff</th><th>Net read</th></tr></thead>
+        <tbody>
+          <tr><td class="spec">Elemental Shaman</td><td>Ascendance Overload <b>75%&rarr;30%</b> (-60%); bonus Lava Bursts 100%&rarr;50%; Feedback Loop R1 <b>35%&rarr;10%</b> (-71%); Fusion EB duration 100%&rarr;40%</td><td>Chain Lightning <b>+60%</b>, Flame Shock <b>+60%</b>, Lava Burst +30%, Lightning Bolt +30%</td><td class="dir">Hardest squish; AoE clearly up</td></tr>
+          <tr><td class="spec">Windwalker Monk</td><td>Celestial Conduit -25%; Zenith Stomp -30%; Tigereye Brew 10/20%&rarr;5/10%; Weapon of Wind 10%&rarr;5%</td><td>Tiger Palm <b>+200%</b>, Blackout Kick +50%, auto +30%, Dual Threat +30%, Temple Training 10%&rarr;30%</td><td class="dir">Biggest filler rebuild; ~flat</td></tr>
+          <tr><td class="spec">Devourer DH</td><td>Mastery in Void Meta <b>-66%</b>; Void Ray 67%&rarr;40% (-40%); Impending Apoc 30%&rarr;20%</td><td>All abilities +20%, Consume +60%</td><td class="dir">Meta softer, outside much stronger</td></tr>
+          <tr><td class="spec">Prot Paladin</td><td>Avenging Wrath down to +10%; Hammer of Light/Empyrean -33%; Divine Toll (Exaction) 150%&rarr;80%</td><td>Judgment <b>+100%</b>, Consecration <b>+100%</b>, ShoR <b>+150%</b>, HotR +50%, Avenger&rsquo;s Shield +30%</td><td class="dir">Huge baseline shift + threat fix</td></tr>
+          <tr><td class="spec">Ret Paladin</td><td>Avenging Wrath 20%&rarr;15%; Art of War 150%&rarr;80% (-47%); Divine Toll Judgment 100%&rarr;50%; Light Within R3 -25%</td><td>Blade of Justice +40%, Templar Strike/Slash +50%, Judgment +50%, Hammer of Wrath +50%</td><td class="dir">~Flat; rotation de-pressured</td></tr>
+          <tr><td class="spec">Fire Mage</td><td>Fired Up R1 <b>4%/12s &rarr; 2%/8s</b>; R3 proc chance reduced</td><td>Fired Up R2 3/6%&rarr;5/10%, Pyroblast +15%, Flamestrike +15%</td><td class="dir">Combustion value moved to filler</td></tr>
+          <tr><td class="spec">Unholy DK</td><td>Commander of the Dead 15/30%&rarr;<b>10/20%</b> (-33%); Army ghoul damage -20%</td><td>Necrotic Coil +20%, Graveyard +20%, Lesser Ghoul +10%</td><td class="dir">~Flat + summon-density cleanup</td></tr>
+          <tr><td class="spec">Assassination Rogue</td><td>Deathmark <b>100%&rarr;75%</b> (-25%); Kingsbane -15%</td><td>All damage +3%, Shrouded Suffocation 20%&rarr;30%, Avulsion 20%&rarr;25%</td><td class="dir">~Flat</td></tr>
+          <tr><td class="spec">Balance Druid</td><td>Astral Power gen + free procs cut (Orbit Breaker 60%&rarr;50%, Touch the Cosmos 15%&rarr;12% / 20%&rarr;15%)</td><td>All damage +4%, Starsurge/Starfall +10%, bigger spenders</td><td class="dir">~Flat; rewards pooling AP</td></tr>
+          <tr><td class="spec">Frost Mage</td><td>Hand of Frost R2 1/2%&rarr;0.5/1% (-50%, Hero-talent burst)</td><td>All damage +4%</td><td class="dir">~Flat, steadier</td></tr>
+          <tr><td class="spec">Devastation Evoker</td><td>Dragonrage no longer front-loads (Rising Fury reworked)</td><td>Post-Dragonrage <b>Unbound Flame</b> (4 casts) extends the window</td><td class="dir">Profile change, ~flat</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- BIGGEST BUFFS / NERFS -->
+  <section id="winners">
+    <div class="sec-head"><h2>Biggest buffs &amp; biggest nerfs</h2></div>
+    <p class="lead">Grounded in the <b>direction and size of the actual changes</b>, separating genuine net gains/losses from the
+    net-neutral redistributions above. A reading of the notes, not a sim.</p>
+    <div class="rank-grid">
+      <div class="rank up">
+        <h3>Trending up</h3>
+        <ol>
+          <li><b>Tanks, across the board.</b> All six tank specs got defensives scaled to the +25% health change. <b>Prot Paladin</b>
+            gained the most damage (Judgment/Consecration <b>+100%</b>, Shield of the Righteous <b>+150%</b>) plus +20% max HP on Ardent
+            Defender; <b>Prot Warrior</b> got Ignore Pain +25%, Ravager +50%, Demolish 45s&rarr;30s. Clearest winners of the patch.</li>
+          <li><b>Beast Mastery Hunter.</b> The one DPS Blizzard says &ldquo;felt weak&rdquo; and buffed: Kill Command +20%, Cobra Shot +20%,
+            Barbed Shot +25%, pet damage +100% (Razor Sharp), Beast Cleave 8s&rarr;10s. Only AoE cleave trimmed, so single-target is a real gain.</li>
+          <li><b>Resto Druid.</b> +6% all healing, Verdancy +40%, Flash of Clarity (+40% Regrowth), Swiftmend bonus, cheaper
+            Rejuv/Regrowth/Lifebloom. Throughput <i>and</i> efficiency up.</li>
+          <li><b>Elemental Shaman AoE.</b> Single-target is a redistribution, but Chain Lightning <b>+60%</b> at 5 targets (Farseer) plus
+            Flame Shock +60% is a big multi-target gain.</li>
+          <li><b>Arms Warrior &amp; Discipline Priest (minor).</b> Arms: Ravager +50%, more frequent Demolish. Disc: Smite +40%, Flash Heal +25%.</li>
+        </ol>
+      </div>
+      <div class="rank down">
+        <h3>Trending down</h3>
+        <ol>
+          <li><b>Mistweaver Monk.</b> The only spec with a blanket <b>-3% all healing</b>, plus Spinning Crane Kick -15% and Way of the
+            Crane 340%&rarr;280%. Mastery +50% only helps if you stack Mastery. Net down.</li>
+          <li><b>Burst-identity specs (squish risk).</b> Net-neutral <i>by design</i>, but if the compensation is under-tuned these come out
+            behind: <b>Elemental</b> (Ascendance Overload -60%), <b>Windwalker</b> (burst -25/30%), <b>Devourer</b> (meta scaling -66%),
+            <b>Fire</b> (Combustion halved), <b>Ret</b> (Art of War -47%, Divine Toll -50%).</li>
+          <li><b>Fatebound Rogues.</b> Deal Fate extra-combo-point chance <b>100%&rarr;60%</b> (-40%) hits Assa &amp; Outlaw Fatebound.</li>
+          <li><b>Dark Ranger Hunters.</b> Black Arrow direct damage <b>-40%</b> and Withering Fire&rsquo;s Black Arrow -40%.</li>
+          <li><b>Frost Mage Hero-talent burst.</b> Hand of Frost R2 halved (1/2% &rarr; 0.5/1%).</li>
+        </ol>
+      </div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <b>Untouched this build:</b> <span class="muted">Affliction &amp; Demonology Warlock got no changes. Frost DK and Enhancement Shaman
+      had no offensive changes (only a defensive/healing bump). If you main these, nothing here moves your damage.</span>
+    </div>
+  </section>
+
+  <!-- REROLL -->
+  <section id="reroll" class="reroll">
+    <div class="sec-head"><h2>Should you reroll?</h2><span class="kicker">if it goes live as-is</span></div>
+    <p class="lead">Short version: this is a <b>redistribution patch on a first PTR build</b>, so there is no free DPS reroll hiding in
+    these notes and the numbers will change. Don&rsquo;t reroll off one PTR build. By direction of travel:</p>
+    <div class="reroll-grid">
+      <div class="card"><span class="q">Want a DPS that genuinely got stronger, not reshuffled?</span> <b>Beast Mastery Hunter</b> is the cleanest pick - buffed because it was weak, no nerf to its own burst.</div>
+      <div class="card"><span class="q">Healer main?</span> <b>Resto Druid</b> is the trend-up healer. Disc/Holy/Pres are roughly neutral with QoL wins. Avoid rerolling <i>to</i> Mistweaver for output this build.</div>
+      <div class="card"><span class="q">Hate spiky, feast-or-famine gameplay?</span> That is the whole point of the patch. <b>Elemental, Windwalker, Devourer, Fire, Retribution</b> will feel much flatter for similar totals. Reroll for feel, not numbers.</div>
+      <div class="card"><span class="q">Chasing big burst windows?</span> <b>Don&rsquo;t reroll for this now</b> - the on-use spikes are exactly what is being cut.</div>
+      <div class="card"><span class="q">AoE / Mythic+ focused?</span> <b>Elemental Shaman</b> (Chain Lightning +60% + 5 targets, Flame Shock +60%) and <b>Shadow Priest</b> (new Shadeburst AoE) picked up dedicated multi-target damage.</div>
+    </div>
+    <div class="disclaimer" style="margin-top:16px"><b>Reroll caveat:</b> none of this is simmed. Net DPS depends on final coefficients,
+      tier sets and encounter tuning this build does not lock in. Treat it as &ldquo;which way the wind is blowing,&rdquo; not a tier list.</div>
+  </section>
+
+  <!-- FULL DATA -->
+  <section id="all">
+    <div class="sec-head"><h2>Every change, by class</h2><span class="kicker" id="all-kicker"></span></div>
+    <p class="lead">Click a class to expand its full transcription. Old &rarr; new and the computed change are shown for every numeric line;
+    reworks, new talents and removals are tagged. Nothing is omitted.</p>
+    <div class="toolbar">
+      <div class="filters" id="filters">
+        <button data-f="all" class="active">All</button>
+        <button data-f="buff">Buffs</button>
+        <button data-f="nerf">Nerfs</button>
+        <button data-f="structural">Reworks &amp; new</button>
+      </div>
+      <button class="toolbtn" id="expand-all">Expand all</button>
+      <button class="toolbtn" id="collapse-all">Collapse all</button>
+    </div>
+    <div id="classes"></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Documentation snapshot of Blizzard&rsquo;s first Patch 12.1 PTR class-change notes. Percentages computed from the stated old/new
+    values; see <code>verify.mjs</code> in the repo. PTR data is subject to change.</p>
+    <p id="footer-src"></p>
+  </div>
+</footer>
+
+<button class="totop" id="totop" title="Back to top" aria-label="Back to top">&uarr;</button>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

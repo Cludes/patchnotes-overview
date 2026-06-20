@@ -86,6 +86,9 @@
   // ---- toc ----
   var toc = $("#toc");
   if (toc) {
+    var back = el("a", null, "&larr; Patches"); back.href = "./"; back.style.color = "var(--accent)"; back.style.fontWeight = "600";
+    toc.appendChild(back);
+    var sep0 = el("span", "navsep"); sep0.textContent = "/"; toc.appendChild(sep0);
     [["global", "Structural"], ["summary", "Glance"], ["scorecard", "Scorecard"],
      ["winners", "Buffs/Nerfs"], ["reroll", "Reroll"], ["all", "All changes"]].forEach(function (p) {
       var a = el("a", null, esc(p[1])); a.href = "#" + p[0]; toc.appendChild(a);
@@ -107,6 +110,9 @@
     cls.specs.forEach(function (sp) {
       sp.changes.forEach(function (c) { nChanges++; if (c.d === "buff") nB++; else if (c.d === "nerf") nN++; });
     });
+    // count only real specs (exclude Class-wide / hero-tree shared sections)
+    var realSpecs = cls.specs.filter(function (sp) { return sp.role !== "All" && sp.role !== "Shared"; }).length;
+    var specLabel = realSpecs + (realSpecs === 1 ? " spec" : " specs");
 
     var det = el("details", "cls");
     det.id = "cls-" + slug(cls.name);
@@ -116,7 +122,7 @@
     sum.innerHTML =
       "<span class='cls-dot'></span>" +
       "<span class='cls-name'>" + esc(cls.name) + "</span>" +
-      "<span class='cls-meta'>" + cls.specs.length + " specs &middot; " + nChanges + " changes</span>" +
+      "<span class='cls-meta'>" + specLabel + " &middot; " + nChanges + " changes</span>" +
       "<span class='cls-tally'>" +
         (nB ? "<span class='minichip b'>+" + nB + "</span>" : "") +
         (nN ? "<span class='minichip n'>-" + nN + "</span>" : "") +
