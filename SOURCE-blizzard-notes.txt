@@ -1,0 +1,585 @@
+CLASSES
+TRENDING TOPICS
+MIDNIGHT
+PATCH 12.0.7
+MIDNIGHT SEASON 1
+MIDNIGHT TALENT CALC
+TIER LISTS
+PROFESSIONS
+PLAYER HOUSING
+0:04
+/
+0:06
+Keep Watching
+Class Changes for First Patch 12.1 PTR Build - DPS Cooldowns Nerfed
+PTR
+ POSTED 1 DAY AGO BY SQUISHEI
+Blizzard has posted class changes for the first Patch 12.1 PTR build which includes reducing the impact of DPS cooldowns, increasing player health and adding an indicator when a player wastes their interrupt.
+
+There are many class changes in this build, but in addition there are some large changes:
+Interrupts that miss will have a visual and a sound effect.
+DPS cooldowns are being reduced
+Health and enemy damage is being increased by 25% to make incoming damage less spiky
+Blizzard
+View Original
+CLASSES
+Player health and creature damage has been increased by 25% at max level. Health consumable values have been adjusted to match new health values.
+Developers’ notes: In Curse of Ula’tek, we’ve decided to increase player health and enemy damage by 25% for max level players. We’ve made similar adjustments at the start of Midnight and also in early Dragonflight. Our intent is for damage to be less spiky and for healing gameplay to be more satisfying. When healing is too bursty, enemies have to be tuned to deal spiky damage which requires quick reactions to survive, and we feel that leads to unsatisfying and more stressful gameplay. While we are increasing overall creature damage with this change, we are hand tuning encounter abilities to deal appropriate damage alongside these changes to meet our goals. We’re also making adjustments to several healing and absorb spells for DPS and Tank specializations so that they retain their relative impact.
+In Curse of Ula’tek, we’re going to be lowering throughput for major DPS cooldown’s for several specializations and increasing their steady state damage. When damage done during cooldowns is significantly higher than damage outside of cooldowns, the pacing of combat outside of cooldowns can feel sluggish. Our priority is ensuring that cooldowns continue to be high-impact and fun moments, that damage dealt without cooldowns is effective, and that we maintain texture between specs. We’re going to be observing how this plays out on PTR and it’s possible we will need to make further adjustments or pull back on some of our changes.
+All class interrupts (such as Kick, Pummel, Counterspell, etc) will now display a “missed” visual over the target’s head if used while the target was not casting a spell. It will also play a separate sound to represent a missed interrupt. This is intended to help players recognize when enemies or allies have used their interrupt ability even if a spell was not interrupted.
+DEATH KNIGHT
+Blood
+Permafrost grants a shield equal to 50% of damage dealt (was 40%).
+Voracious grants 15% Leech (was 12%).
+Relish in Blood healing increased by 25%.
+Rapid Decomposition increases Blood Plague healing by 85% (was 50%).
+Sanguinary Burst heals you for 18% of damage dealt (was 15%).
+Umbilicus Eternus absorbs damage equal to 6 times damage dealt by Blood Plague (was 5).
+Frost
+Permafrost grants a shield equal to 35% of damage dealt (was 30%).
+Unholy
+Developers’ notes: With Curse of Ula’tek, we’re aiming to smooth the gap between cooldown and non-cooldown throughput. Additionally, we’re taking a look at the current summon density of Unholy Death Knight. For its rework in Midnight, Unholy Death Knight was reimagined as a summoner of the Scourge and we’re very happy with how it landed. However, combined with the previous summoning powers from the Rider of the Apocalypse Hero Talent tree, the amount of summons are exceeding the numbers we’re comfortable with. It is paramount for us to provide a clear game space for our players, and we felt there was no design space left for us to give more summoning powers without ignoring this core principle.
+Reanimation renamed to Lord of the Dead and its secondary effect has been redesigned – When you control 3 Magus of the Dead, sacrifice them to summon their Lord of the Dead for 15 seconds, casting Frostbolts that chain between 2 enemies. Magus with higher remaining duration grant increased power.
+Apex Talent: Forbidden Knowledge (Rank 3) has been updated – Magus of the Dead no longer grants stacking damage to Necrotic Coil and Graveyard. The effectiveness of Putrefy activated by Dread Plague has been increased to 100% (was 60%).
+Soul Reaper has been updated – No longer consumes charges of Putrefy to cast. Now consumes up to 3 Lesser Ghoul stacks to summon them instantly.
+Unholy Aura has been updated – Magus of the Dead now grant the Haste buff on spawn for 15 seconds.
+Army of the Dead has been updated – Summon or empower Lesser Ghouls to form an unholy army of 8 for 30 seconds. While active, you command your army through Scourge Strike, executing Orders based on nearby enemies instead of summoning Lesser Ghouls.
+Death Order – Lesser Ghouls strike with you, dealing Shadow damage to your target.
+Epidemic Order – Lesser Ghouls erupt in viscera, dealing Shadow damage to nearby enemies. Deals reduced damage beyond 5 targets.
+Menacing Magus now has an additional effect – Your Lord of the Dead Frostbolts now chain to 3 additional enemies.
+Lesser Ghoul damage increased by 10%.
+Army of the Dead Lesser Ghoul damage reduced by 20%.
+Necrotic Coil damage increased by 20%.
+Graveyard damage increased by 20%.
+Commander of the Dead now causes Dark Transformation to increase the damage of your summoned creatures by 10%/20% for 30 seconds (was 15%/30%).
+Ruptured Viscera now deals reduced damage beyond 5 targets.
+Players other than the Death Knight can now only see up to 3 Lesser Ghouls at a time.
+Permafrost grants a shield equal to 35% of damage dealt (was 30%).
+DEMON HUNTER
+Demon Hunters can now equip daggers.
+Developers’ notes: This will allow Devourer Demon Hunters to acquire and use daggers with Intelligence on them.
+Devourer
+Developers’ notes: We’re reducing the scaling of Devourer’s Mastery: Monster Within to help other stats to compete and compensating with an overall ability damage buff. Between that and a few more targeted changes, we expect damage during Void Metamorphosis to be slightly reduced while damage outside of Metamorphosis is significantly increased.
+Mastery: Monster Within has been updated – Bonus damage during Void Metamorphosis reduced by 66%.
+All ability damage increased by 20%.
+Void Metamorphosis now increases Void Ray damage by 40% (was 67%).
+Impending Apocalypse now causes each Collapsing Star to grant 20% increased damage to the next one (was 30%).
+Consume damage increased by 60% (does not affect Devour).
+Havoc
+Demon Blades, Blade Dance, and Chaos Strike now require equipped Warglaives, Axes, Swords, and Fist Weapons.
+New Talent: Never Say Die – Damage increased by 3% while above 50% Health. Leech increased by 5% while below 50% Health.
+Dash of Chaos has been removed.
+Vengeance
+Fracture and Soul Cleave now require equipped Warglaives, Axes, Swords, and Fist Weapons.
+Charred Warblades heals you for 5% of Fire damage you deal (was 4%).
+Soul Cleave healing increased by 25%.
+Fel Devastation healing increased by 25%.
+Frailty causes you to heal for 10% of damage dealt to afflicted targets (was 8%).
+Feast of Souls healing increased by 25%.
+Revel in Pain causes 6% of your Fire damage to shield you (was 5%).
+DRUID
+Matted Fur absorb increased by 25%.
+Heart of the Wild empowered Wild Growth healing increased by 25%.
+Balance
+Developers’ notes: Our goal for Balance in Curse of Ula’tek is to emphasize its core gameplay of building, spending, and pooling Astral Power. In Midnight, Balance had high Astral Power generation and a lot of free spender procs, which meant there weren’t many GCDs left after casting spenders. In Curse of Ula’tek we’ve reduced Astral Power generation and the number of free spenders but increased the damage each spender does. The intent is to provide more time to react to Astral Power gain and make pooling Astral Power outside Eclipse to spend inside Eclipse more impactful. We’ve also adjusted some talent power to increase build diversity.
+New passive ability learned at level 42: Stellar Protection – If Moonfire and Sunfire are dispelled, Stellar Flare is applied to the target. Generates 12 Astral Power.
+Umbral Intensity has been updated – Now increases Wrath and Starfire damage by 10% at all times.
+Apex Talent: Ascendant Eclipses (Rank 2) – Astral Smolder damage reduced to 10%/20% of critical strike damage (was 12%/24%) and its duration is increased to 8 seconds (was 6 seconds).
+All damage dealt increased by 4%.
+Starsurge damage increased by 10%.
+Starfall damage increased by 10%.
+Rejuvenation healing increased by 25%.
+Wild Growth healing increased by 25%.
+Regrowth healing increased by 25%.
+Celestial Fire increases the damage of Moonfire, Sunfire, and Shooting Stars by 10% (was 8%).
+Orbit Breaker effectiveness reduced to 50% (was 60%).
+Touch the Cosmos chance to trigger from Wrath reduced to 12% (was 15%), and chance to trigger from Starfire reduced to 15% (was 20%).
+Total Eclipse chance to trigger increased to 15%/30% (was 10%/20%).
+Sculpt the Stars and Astral Communion have swapped positions in the talent tree.
+Sculpt the Stars reduces Eclipse cooldown by 3 seconds (was 2 seconds).
+A counter aura for Orbit Breaker has been added to show your progress toward casting a Full Moon. This aura can be tracked in the Cooldown Manager and manually cancelled to reset your Orbit Breaker progress.
+Hero Talents
+Elune’s Chosen
+Lunar Calling increases the primary target damage of Starfire by 100% (was 120%).
+Keeper of the Grove
+Bounteous Bloom now extends the duration of Force of Nature Treants by 4 seconds instead of adding a fourth Treant.
+Cenarius’ Might haste increase reduced to 6% (was 8%).
+Potent Enchantments haste increase reduced to 6% (was 10%).
+Feral
+Developers’ notes: Feral updates in Curse of Ula’tek are aimed at talent diversity. We’d like Chomp to be stronger for players who enjoy it, and we’re adjusting some other talents to get their power closer and open up more build options.
+Saber Jaws damage bonus increased to 60% per point (was 50%).
+Focused Frenzy damage bonus reduced to 15% (was 20%).
+Rip and Tear damage bonus increased to 20% (was 15%).
+Chomp damage increased by 30%.
+Apex Predator’s Craving base chance to trigger reduced to 4% (was 5%).
+Rejuvenation healing increased by 25%.
+Wild Growth healing increased by 25%.
+Regrowth healing increased by 25%.
+Restoration
+Developers’ notes: We’re making several quality-of-life adjustments to Restoration Druid in this update with a goal of addressing usability issues with Tranquility, Nature’s Swiftness, and Incarnation: Tree of Life. We’re also making a few adjustments to Swiftmend to bring back some of its power as a punchy single-target heal. Finally, we’d like to address issues with Abundance by redesigning it with a clear threshold of when you should be using Regrowth.
+New Talent: Overgrowth – Nature’s Swiftness causes your next Regrowth to apply Lifebloom, Rejuvenation, and Wild Growth’s heal over time effect to an ally.
+New Talent: Flash of Clarity – Omen of Clarity increases Regrowth’s healing by 40%. Now available where Cultivation previously was in the talent tree.
+Cultivation is now available below Flash of Clarity in the talent tree.
+Innervate has been redesigned – Now regenerates 25% of the target’s maximum mana over 8 seconds, rather than causing spells to be free for 8 seconds.
+Abundance has been redesigned – While you have at least 5 Rejuvenations active, Regrowth’s critical strike chance is increased by 50% and its mana cost is reduced by 50%.
+Tranquility has been updated – Now grows protective roots at your feet, absorbing damage equal to 60% of your health and preventing knockbacks.
+Incarnation: Tree of Life has been updated – Now casts Regrowth on up to 3 nearby injured allies when you initially shapeshift.
+Swiftmend has been updated – Healing increased by 40% of the consumed heal over time effect.
+Everbloom (Rank 3) has been updated – Its heal effect now triggers when you press Swiftmend (was Soul of the Forest).
+Verdant Infusion has been updated – No longer extends heal over time effects.
+Germination has been updated – No longer increases Rejuvenation’s duration by 2 seconds.
+Ysera’s Gift has been updated – If its healing would overheal the Druid, the overhealing amount is instead transferred to a nearby ally.
+All spell and ability healing increased by 6%.
+Wild Growth healing increased by 20%.
+Wild Growth mana cost increased by 15%.
+Verdancy healing increased by 40%.
+Rejuvenation mana cost reduced by 10%.
+Regrowth mana cost reduced by 10%.
+Lifebloom mana cost reduced by 20%.
+Passing Seasons reduces Nature’s Swiftness cooldown by 15 seconds (was 12 seconds).
+Symbiotic Relationship now highlights itself on the action bar while it is not active.
+Germination and Verdancy have swapped positions in the talent tree.
+Nature’s Splendor has been removed.
+Guardian
+Developers’ notes: Our goals with these Guardian Druid updates are largely to address issues with the specialization’s damage composition and ability breakdown. In particular, we’re reworking Lunation in order to resolve its adverse rotational pressure, and our adjustments to Gory Fur and Wild Guardian are intended to incentivize more balance between Rage spenders as well as distribute the impact of the Apex talent across a longer duration and a broader portion of the kit.
+Gory Fur has been redesigned – Ironfur has a chance to make your next Maul, Raze, or Ravage free. Maul, Raze, or Ravage have a chance to make your next Ironfur free.
+Apex Talent: Wild Guardian has been redesigned (not yet implemented) –
+Rank 1: Spending Rage has a chance to awaken a Guardian Spirit for 8 seconds, which attacks a nearby enemy and generates 3 Rage when you cast Thrash or Mangle.
+Rank 2: Mangle and Maul deal 20%/40% additional Nature damage over 12 seconds. Your Mastery is increased by 3%/6%.
+Rank 3: When a spirit is awakened, the cooldowns of Thrash and Mangle are reset. After casting Berserk or Incarnation: Guardian of Ursoc, gain 2 charges of Wild Guardian.
+Wild Guardian: Your next cast of Maul is guaranteed to awaken a spirit.
+Brambles absorb increased by 25%.
+After the Wildfire healing increased by 25%.
+Ursoc’s Fury grants an absorb for 35% of Thrash and Maul damage (was 30%).
+Elune’s Favored heals you for 18% of Arcane damage dealt (was 15%).
+Lunar Beam healing increased by 25%.
+Lunation reduces Lunar Beam’s cooldown by 20 seconds (was 3 seconds per Arcane ability).
+Hero Talents
+Elune’s Chosen
+Boundless Moonlight – Lunar Beam now causes you to Leech 12% of damage dealt to affected enemies (was 10%).
+EVOKER
+Augmentation
+Developers’ notes: The additional stopping power created by Duplicate-cast Upheavals was more warping to dungeon gameplay than desired, and could be frustrating in some situations due to its uncontrolled timing.
+Apex Talent: Duplicate – Upheaval casts by your Duplicate no longer knock enemies into the air.
+Living Flame healing increased by 25%.
+Verdant Embrace healing increased by 25%.
+Emerald Blossom healing increased by 25%.
+Hero Talents
+Chronowarden
+Double-time has been updated – The additional stats granted when Ebon Might critically strikes now last 15 seconds (modified by Mastery: Timewalker). Double-time’s functionality with Prescience is unchanged.
+Developers’ notes: The behavior of an Ebon Might critical strike’s stat bonus lasting for the full duration of the Ebon Might put more emphasis on tracking Ebon Might’s critical state than desired, and created an unintuitive decision space regarding whether re-casting Ebon Might was correct.
+Devastation
+Developers’ notes: Devastation’s Apex talent, while powerful, hasn’t been as gameplay-affecting as we had hoped. We’ve redesigned the Rank 3 effect to override Dragonrage with a limited number of uses of a new, powerful spell, Unbound Flame, once Dragonrage is over. Additionally, Rising Fury and Risen Fury have been streamlined into one buff effect. Please give Unbound Flame a try on the PTR, and let us know how this new spell feels!
+Rising Fury (Rank 3) has been redesigned – When Dragonrage ends, Rising Fury persists for 4 seconds per stack, and Dragonrage becomes Unbound Flame. Unbound Flame may be cast 4 times before Dragonrage finishes its cooldown.
+Unbound Flame – Exhale destructive flame, critically striking for Fire damage to your target and nearby enemies. Damage reduced beyond 5 targets. Causes 1 Essence Burst. Instant cast and 25-yard range.
+Tyranny has been updated – Now interacts with Unbound Flame, causing Unbound Flame to always gain the maximum benefit of Mastery: Giantkiller regardless of the targets’ health.
+Living Flame healing increased by 25%.
+Verdant Embrace healing increased by 25%.
+Emerald Blossom healing increased by 25%.
+Risen Fury has been removed.
+Preservation
+Developers’ notes: The goal of this change is to make Dream Breath a flexible heal that can once again serve as a powerful heal over time effect or a burst heal when charged. This also further differentiates it from spells like Verdant Embrace and Merithra’s Blessing, which have filled a similar role as an on-demand burst heal.
+Merithra’s Blessing has been updated – Now increases all healing of Dream Breath by 60% (was 250%, and previously applied only to its instant healing).
+Font of Magic has been updated – Now also reduces the empower time of Dream Breath and Fire Breath by 20%.
+Dream Breath instant healing reduced by 50%.
+Dream Breath periodic healing increased by 118%.
+Temporal Barrier absorption increased by 30%.
+HUNTER
+Ranged auto-shot damage increased by 600%.
+Hunter’s Mark can now be applied to up to 5 targets (was 1).
+Developers’ notes: This change should allow Hunters to more reliably apply the Hunter’s Mark debuff in raid or dungeon boss encounters when there are multiple bosses without the need to bring multiple Hunters.
+Hero Talents
+Dark Ranger
+Bleak Arrows damage increased by 300%.
+Withering Fire’s Black Arrow damage reduced by 40%.
+Beast Mastery
+Developers’ notes: Beast Mastery Hunters felt a bit weak outside of Bestial Wrath damage windows, so we’re increasing their steady-state damage by boosting Kill Command, Cobra Shot, and Barbed Shot. We’re increasing the duration of Beast Cleave to 10 seconds, so you should be able to maintain 100% uptime in area damage situations as long as you are using Wild Thrash when it is available.
+Heart of the Pack renamed to Razor Sharp and has been redesigned – Increases the damage of your pet’s Bite, Claw, and Smack by 100%.
+Piercing Fangs has been redesigned – Kill Command critical damage increased by 15%.
+Bloody Frenzy has been updated – Now reduces Barbed Shot’s periodic rate increase by 33% (was 50%).
+Kill Cleave has been updated – Kill Command now only cleaves 20% of its damage during Beast Cleave (was 40%).
+Barbed Shot damage increased by 25%.
+Kill Command damage increased by 20%.
+Cobra Shot damage increased by 20%.
+Beast Cleave duration increased to 10 seconds (was 8 seconds).
+Dire Beast summons can now be tracked on the Cooldown Manager.
+Wild Instincts has been removed.
+Hero Talents
+Dark Ranger
+Dark Hound summons can now be tracked on the Cooldown Manager.
+Marksmanship
+Developers’ notes: Marksmanship Hunter’s last round of changes reintroduced Explosive Shot as a button players can opt into, but it didn’t flow well with how the spec was playing. In Midnight Season 2, we’re making changes to Explosive Shot’s design and some of its supporting talents. The Headshot talent has also been a source of frustration, so we’re removing it and adjusting how Deathblow works to make it more predictable when you should follow up an Aimed Shot cast with a Kill Shot or Black Arrow. Finally, we’re adjusting Markmanship’s Apex Talent nodes to no longer make Aimed Shot a guaranteed critical strike to reduce the emphasis on Aimed Shot modifiers.
+New Talent: Unstable Trigger – Explosive Shot can be used a second time if used within 3 seconds. Explosive Shot incorporates any remaining damage from previous Explosive Shots on your target.
+Explosive Shot has been redesigned – Fire an explosive shot at your target. Every 1 second for 3 seconds, the target explodes, dealing Fire damage to all enemies within 8 yards. Damage reduced beyond 5 targets. Recasting Explosive Shot incorporates any remaining damage from previous Explosive Shots on your target.
+Developers’ notes: We are pivoting the design of Explosive Shot quite a bit to attempt to find a stronger identity. The changes to the core Explosive Shot as well as the Explosive Shot related talents should give it a distinct feel to play with compared to your other main abilities.
+Explosive Shot’s visual has been updated.
+Explosive Shot’s tooltip has been updated and now includes contextual notes when Unstable Trigger is talented.
+Precision Detonation has been redesigned – Explosive Shot lasts for 1 additional second.
+Shrapnel Shot renamed to Incendiary Ammunition and has been redesigned – Explosive Shot’s cooldown is reduced by 10 seconds.
+Incendiary Ammunition and Unstable Trigger are now a choice node.
+Apex Talent: Take Aim (Rank 2) has been redesigned – Your critical strike damage is increased by 5%/10%. Your ranged abilities deal 3%/6% increased damage.
+Apex Talent: Take Aim (Rank 3) has been updated – Spotter’s Mark now increases the damage of your next Aimed Shot and Rapid Fire against the target (was Aimed Shot only).
+Developer’s notes: The previous version of Marksmanship’s Apex Talents put too much emphasis on Aimed Shot and its critical damage modifiers. This new version should better interact with more of your specialization’s abilities.
+Bulletstorm has been redesigned – Rapid Fire now increases the damage of your next Aimed Shot by 20%.
+Incendiary Ammunition renamed to Accuracy by Volume and has been redesigned – Bulletstorm now affects your next 2 Aimed Shots.
+Deathblow has been updated – Aimed Shot now has a chance to cause your next Aimed Shot to grant the Deathblow effect.
+Developers’ notes: Our goal with our Deathblow updates for Marksmanship Hunters is to make it clear to you when you should follow up an Aimed Shot with a Kill Shot or Black Arrow cast rather than having the uncertainty of which button to press. Rapid Fire’s 100% chance to get the Deathblow effect is unchanged, you should always be able to follow-up a Rapid Fire with a Kill Shot or Black Arrow.
+Aspect of the Hydra has been updated – Arcane Shot no longer cleaves.
+Aimed Shot damage increased by 20%.
+Rapid Fire damage increased by 20%.
+Arcane Shot damage increased by 20%.
+Multi-Shot damage increased by 20%.
+Kill Shot damage increased by 20%.
+Eagle’s Accuracy is now a 1-point talent that increases the damage of Aimed Shot by 5% (was 10%) and Rapid Fire by 10% (was 20%).
+Focused Aim now reduces the cooldown of Aimed Shot by 1 second (was 2 seconds).
+Fixed an issue that caused Deathblow to not trigger at the expected rates when casting Aimed Shot.
+Aimed Shot has a new icon.
+Some talents have changed locations in the second gate of the talent tree to make Explosive Shot more easily obtained.
+The Tenacious/Cunning talent node has been moved and is no longer required pathing to reach Trueshot.
+Small Game Hunter is now a 2-point talent. Values unchanged.
+The following talents have been removed:
+Double Tap
+Headshot
+Hero Talents
+Dark Ranger
+Through the Eyes has been redesigned – Increases the damage of Kill Shot and Black Arrow by 10%.
+Black Arrow no longer highlights itself whenever it is able to be used against the target.
+Black Arrow direct damage reduced by 40%.
+Ebon Bowstring now causes Black Arrow to have a chance to cause your next Aimed Shot to grant the Deathblow effect.
+Dark Minion summons can now be tracked on the Cooldown Manager.
+Sentinel
+Moon’s Blessing now only causes 1 second of cooldown reduction to Aimed Shot (was 2 seconds).
+Survival
+New Talent: Razor Edge – Raptor Strike, Raptor Swipe, and Kill Command gain 10% increased critical strike chance and 10% increased critical damage dealt.
+Primal Surge has been moved up to an easier to access location in the talent tree.
+Developers’ notes: We’re hoping that making this talent easier to obtain should open up more talent build variety.
+Shower of Blood has been removed.
+Hero Talents
+Sentinel
+Lethal Barbs has been updated – Auto-attacks now have a very high chance to generate 3 Focus, rather than granting 1 Focus per auto-attack.
+Developers’ notes: The previous version of the Lethal Barbs talent favored dual wielding the fastest attack speed weapons. We’re changing it to be a very high chance to generate 3 Focus, which should normalize the Focus gain and allow you to wield your preferred weapon types.
+Scout’s Vigil no longer increases stealth detection radius while using Camouflage.
+MAGE
+Developers’ notes: We’re making some adjustments to Mage defensives with the goal of improving Mage survivability as a whole and slightly reducing the power of Glacial Bulwark.
+New Talent: Improved Warding – Damage taken from area of effect attacks reduced by 4%.
+Improved Prismatic Barrier has been updated – Now grants an additional charge of Prismatic Barrier, in addition to its previous bonuses.
+Temporal Realignment has been updated – Now immediately heals 20% of your health and heals an additional 30% over 6 seconds.
+Hero Talents
+Spellslinger
+Spellfrost Teachings’s tooltip has been adjusted for clarity. Functionality unchanged.
+Sunfury
+Developers’ notes: We’re redesigning Rondurmancy to lean into making your 3 orbs better, rather than giving you 5 orbs, to align more closely with the inspirations for Sunfury and reduce visual clutter on your character. We’re also uncapping Mana Cascade to match other “applications may overlap” effects.
+Rondurmancy has been redesigned – Your chance to generate a Spellfire Sphere is increased by 6%/12%. Spellfire Spheres grant an additional 1% spell damage.
+Ashes of Inspiration has been redesigned – Each time your Phoenix casts a spell, gain 1 stack of Mana Cascade. Exceptional Spells grant 1 additional stack.
+Memory of Al’ar has been updated – Combustion and Arcane Surge no longer cause the Mage to gain twice as many stacks of Mana Cascade.
+Spellfire Spheres orb generation chance reduced to 6% for Arcane Mages and 12% for Fire Mages (was 12% and 25%).
+Mana Cascade no longer has a stack cap.
+Mana Cascade is now also gained when the Mage casts Arcane Pulse or Prismatic Bolt.
+Fixed an issue for Arcane that caused Mana Cascade to be gained from some unintended spells.
+Arcane
+Developers’ notes: We’re redesigning Arcane Mage’s Apex Talent to provide a more exciting visual moment and a greater impact on your talent build and rotation. Arcane Pulse has also been redesigned to focus its identity as a significant area damage event and a way to quickly regain charges in AOE.
+New Apex Talent: Prismatic Bolt
+Rank 1: Arcane Barrage has a 1% chance per Arcane Salvo stack consumed to trigger Prismatic Bolt. Prismatic Bolt devastates the target with overwhelming energy, dealing Arcane damage to your target and reduced Arcane damage to nearby enemies. Damage reduced beyond 5 targets. Generates 4 Arcane Charges. Not affected by Arcane Blast talents or effects and does not scale its damage or mana cost with Arcane Charges.
+Rank 2: Prismatic Bolt has a 50%/100% chance to grant Clearcasting. Arcane Missiles damage increased by 15%/30%.
+Rank 3: Arcane Salvo grants an additional 1% chance to trigger Prismatic Bolt. Arcane Barrage damage increased by 15%.
+Arcane Pulse has been redesigned – Cast time reduced to 2 seconds (was 2.25 seconds). Radius increased to 8 yards (was 2 yards). Now has a 15-second cooldown, generates 1 Arcane Charge for each enemy struck, and costs 10% of base mana. No longer has its cast time, radius, mana cost, or cast speed affected by Arcane Charges.
+Expanded Mind has been updated – Casting Prismatic Bolt now grants 4 stacks of Arcane Salvo.
+Impetus no longer affects Arcane Pulse.
+Prodigious Savant no longer affects Arcane Pulse.
+Touch of the Archmage has been removed.
+Fire
+Developers’ notes: Our goal with these changes is to shift the relative value of Fire’s steady-state damage versus Combustion window burst. It is important that time spent outside of Combustion remains meaningful and impactful to your overall performance.
+Pyroblast damage increased by 15%.
+Flamestrike damage increased by 15%.
+Apex Talent: Fired Up (Rank 1) now grants 2% increased Fire damage for 8 seconds (was 4% for 12 seconds).
+Apex Talent: Fired Up (Rank 2) now increases Fire damage by 5%/10% (was 3%/6%).
+Apex Talent: Fired Up (Rank 3) chance to occur during Combustion has been slightly reduced.
+Frost
+Glacial Bulwark has been updated – No longer grants an additional charge of Ice Barrier.
+All damage dealt increased by 4%.
+Apex Talent: Hand of Frost (Rank 2) now grants 0.5%/1% increased spell damage (was 1%/2%).
+Developers’ notes: Hand of Frost in combination with Frost’s Hero Talents was providing more burst than we’d like.
+MONK
+Chi Transfer now causes Touch of Death to heal you for 60% of damage it deals (was 50%).
+Vigorous Expulsion increases Expel Harm’s healing by 6% (was 5%).
+Brewmaster
+Stagger reduction from Staggering Strikes increased by 25%.
+Spirit of the Ox chance to generate a healing sphere increased by 20%.
+Celestial Brew and Celestial Infusion absorb increased by 25%.
+Awakening Spirit’s maximum absorb value increased by 25%.
+Vital Flame heals for 50% of Fire or Nature damage dealt (was 40%).
+The following buffs are now tracked in the Cooldown Manager: Fuel on the Fire, Hot Potato, Scorched, Crackling Jade Lightning, and August Blessing.
+Mistweaver
+Developers’ notes: We’re making a few adjustments to Mistweaver Monk with the intent of incentivizing Mastery as a more viable secondary stat and shifting some throughput out of Spinning Crane Kick and into Ancient Teachings.
+New Talent: Vital Expenditure – Soothing Mist’s healing is increased by 300%, but its mana cost is increased by 200%. Choice node with Dancing Mists.
+All healing reduced by 3%.
+Mastery: Gust of Mist healing increased by 50%.
+Spinning Crane Kick damage decreased by 15%.
+Way of the Crane now transfers 280% of damage done (was 340%).
+Jadefire Teachings now increases Ancient Teaching’s transfer amount by 320% (was 270%).
+Windwalker
+Developers’ notes: We are making a few adjustments to Windwalker’s damage profile to reduce the gap between their steady-state damage and high-end burst capabilities.
+Melee auto-attack damage increased by 30%.
+Zenith Stomp damage reduced by 30%.
+Blackout Kick damage increased by 50%.
+Tiger Palm damage increased by 200%.
+Dual Threat damage increased by 30%.
+Weapon of Wind now increases damage during Zenith by 5% (was 10%).
+Tigereye Brew now increases Critical Strike damage by 5%/10% (was 10%/20%).
+Vivify healing increased by 25%.
+Hero Talents
+Conduit of the Celestials
+Celestial Conduit damage reduced by 25%.
+Temple Training increases the damage of Fists of Fury and Spinning Crane Kick by 30% (was 10%).
+PALADIN
+Golden Path healing increased by 25%.
+Lightforged Blessing healing increased by 25%.
+Brought to Light healing increased by 25%.
+Hero Talents
+Lightsmith
+Rite of Adjuration healing increased by 25%.
+Protection
+Developers’ notes: With these changes we’re intending to reduce the opportunity cost associated with taking Sentinel and broadening the suite of defensive talent options. We’re also transferring some power out of strong cooldown windows and into baseline throughput, with the goal of reducing associated threat pain points and improving the feel of combat outside of cooldowns.
+New Talent: Blessed Word – Word of Glory can no longer critically strike, but its healing is increased by your critical strike chance and 80% of its overhealing done to you instead shrouds you in Light, granting an absorb shield.
+Improved Ardent Defender has been redesigned – Now increases maximum HP by 20% while active and no longer cancels remaining duration if fatal damage is sustained.
+Seal of Reprisal has been redesigned – Blessed Hammer reduces enemy damage dealt to you by 10% for 8 seconds.
+Masterwork has been updated – After casting a Holy Armament, your next 3 casts of Hammer of the Righteous/Blessed Hammer/Crusader Strike bestow a Lesser Armament of the same kind on a nearby ally.
+Judgment damage increased by 100%.
+Consecration damage increased by 100%.
+Shield of the Righteous damage increased by 150%.
+Hammer of the Righteous primary damage increased by 50%.
+Avenging Wrath increases damage and healing done by 10%, and critical strike by 10%.
+Avenger’s Shield damage increased by 30%.
+Lesser Weapon damage increased by 50%.
+Hammer of Light damage reduced by 33%.
+Empyrean Hammer damage reduced by 33%.
+Divine Exaction’s Divine Toll effectiveness reduced to 80% (was 150%).
+Sentinel duration increased to 20 seconds.
+Undying Embers heals you for 125% of damage dealt by Refining Fire (was 100%).
+Bulwark of Order absorb increased to 75% of Avenger’s Shield damage (was 60%).
+Solace causes Consecration to heal you for 375% of damage it deals (was 300%).
+Sacred Weapon and Holy Bulwark extend their duration when reapplied by the same caster.
+Glory of the Vanguard now deals damage as a percentage of Avenger’s Shield’s initial damage.
+Sentinel has been moved, and now inherits Avenging Wrath’s critical strike bonus.
+Sanctified Wrath has been removed.
+Retribution
+Developers’ notes: In addition to addressing the throughput spikes during cooldown windows, with Curse of Ula’tek we are aiming to smooth out the rotation by reducing the pressure on consuming Art of War/Righteous Cause effects. Alongside these changes, we are also removing some interactions with the Skyfury buff that deeply impacts the rotation and Holy Power economy. We believe this is a healthier direction for Retribution Paladin that will allow for more choice and player agency.
+Apex Talent: Light Within (Rank 1) now has an additional effect – Art of War and Righteous Cause can now each accumulate an additional time.
+Art of War has been updated – Now increases Blade of Justice damage by 80% (was 150%).
+Blade of Justice damage increased by 40%.
+Final Verdict damage increased by 15%.
+Divine Storm damage increased by 15%.
+Avenging Wrath now increases damage done and critical strike chance by 15% (was 20%).
+Templar Strike damage increased by 50%.
+Templar Slash damage increased by 50%.
+Judgment damage increased by 50%.
+Hammer of Wrath damage increased by 50%.
+Divine Toll’s Judgment now deals 50% increased damage (was 100%).
+Apex Talent: Light Within (Rank 3) damage reduced by 25%.
+Flash of Light healing increased by 25%.
+Word of Glory healing increased by 25%.
+Eternal Flame healing increased by 25%.
+Art of War no longer activates from additional Skyfury attacks.
+Additional Skyfury attacks no longer generate Holy Power when talented into Crusading Strikes.
+Crusading Strikes now increases auto-attack speed by 15% (was decreasing by 20%).
+Execution Sentence area of effect radius increased to 10 yards and now includes the bounding radius of the target (was 8 yards).
+Hero Talents
+Templar
+Hammer of Light damage reduced by 30%. Does not affect PvP combat.
+Hammer of Light now costs 3 Holy Power (was 5).
+PRIEST
+Discipline
+Developers’ notes: For Discipline in Curse of Ula’tek, our changes are aimed at reducing the spec’s reliance on procs for effective healing, improving sources of consistent damage, and improving Hero talent balance. We felt the spec was too reliant on Shadow Mend and Void Shield procs for effective healing, so we’re updating Shadow Mend to be a passive upgrade to Flash Heal and adding a deterministic way to gain access to Void Shield. Additionally, Smite contributes a low amount of damage despite being frequently cast, so we’re increasing its damage and updating the talent tree for easier access to Greater Smite.
+New Talent: Grim Deliverance – Shadow Mend heals for 30% more and applies Atonement for an additional 4 seconds, but its cast time is increased by 0.5 seconds.
+Shadow Mend’s chance to trigger is no longer based on Shadow Word: Pain damage and has been redesigned to a passive upgrade – Flash Heal is upgraded to Shadow Mend, a stronger heal with a higher mana cost.
+Apex Talent: Master the Darkness (Rank 3) has been updated – Mind Blast now upgrades your next Power Word: Shield to Void Shield. Void Shield’s chance to trigger from Penance reduced to 25% (was 33%).
+Apex Talent: Master the Darkness (Rank 3) has been updated – Void Shield now reflects 15% of damage taken (was 25%).
+Apex Talent: Master the Darkness can now accumulate up to 2 charges.
+Flash Heal healing increased by 25%.
+Smite damage increased by 40%.
+Inescapable Torment damage reduced by 30%.
+Penance no longer applies Atonement when cast on an ally.
+Developers’ notes: We updated Penance to apply Atonement going into Midnight but have felt this has not been playing well as it causes too much friction between casting Penance on allies that need healing, allies that need Atonement applied, and enemies you want to deal damage to.
+Greater Smite is now a 1-point talent.
+Hero Talents
+Oracle
+Unfolding Vision has been redesigned – When Power Word: Shield or Void Shield expires with absorption remaining, it jumps to a nearby injured ally instead. Can only happen once per shield.
+Voidweaver
+Void Blast damage increased by 25%.
+Voidwraith damage increased by 30%.
+Void Infusion now increases Atonement healing from Void Blast and Penance by 75% while Entropic Rift is active (was 50%).
+Holy
+Hero Talents
+Archon
+Resonant Energy has been slightly redesigned – Creating a Halo increases healing done by 2% for 10 seconds, stacking up to 4 times.
+Divine Hymn has been updated – Now additionally grants Guardian Spirit while channeled.
+Developers’ notes: We are adding a benefit to channeling Divine Hymn to make it easier to use. If you already have Guardian Spirit active on yourself, Divine Hymn will add 5 seconds to its duration. If Divine Hymn’s channeling is ended early, it will remove whatever time is remaining from the amount that it added.
+Shadow
+Developers’ notes: For Shadow in Curses of Ula’tek, we’re intending to improve Voidform gameplay and are adding an additional source of multi-target damage to reduce the spec’s reliance on Psychic Link in AoE situations. For Voidform, we’re updating Void Volley to be a limited use ability that can be used a set number of times during Voidform which leaves more room in the rotation while giving you the chance to use it at its most opportune moment. We’ve also updated Voidform support talents to have more noticeable effects to align with our goals.
+New Talent: Shadeburst – Shadowy Apparitions that float towards your primary target explode, dealing Shadow damage to all enemies within 8 yards. Damage reduced beyond 5 targets.
+Improved Voidform has been redesigned – Voidform increases your spell damage by an additional 5% and grants 2 additional uses of Void Volley.
+Ancient Madness has been redesigned – Shadow Word: Madness increases your Haste during Voidform by 2% and increases its duration by 1.5 seconds, stacking up to 5 times. When Voidform ends, the Haste lingers and decays over 10 seconds.
+Voidform now grants 3 uses of Void Volley instead of Void Volley having a cooldown during Voidform.
+Power Word: Shield absorb increased by 25%.
+Phantom Menace has been removed.
+Hero Talents
+Archon
+Focused Outburst has been redesigned – Void Volley deals 15% increased damage and Shadow Word: Madness casts during Voidform unleash a Void Volley at your target.
+Resonant Energy has been slightly redesigned – Creating a Halo increases your spell damage by 2% for 10 seconds, stacking up to 4 times.
+ROGUE
+Class
+Thistle Tea is now a choice talent – Players may now choose between the existing version, which casts automatically at low Energy in addition to being usable actively, and a new version that must be cast actively.
+Atrophic Poison now reduces damage dealt by 4% (was 3%).
+Atrophic Poison duration increased to 60 seconds (was 10 seconds). Duration remains unchanged in PvP combat.
+Hero Talents
+Fatebound
+Deal Fate now has a 60% chance to grant an extra combo point when you Seal Fate (was 100%).
+Assassination
+Developers’ notes We’re making some updates to Assassination’s Energy economy in Curse of Ula’tek. We aren’t happy with how the Rank 1 Implacable apex talent is playing – it’s unintuitive for optimal play to intentionally let Envenom drop. We’re updating its design so refreshing Envenom late is consistently the best way to play and giving it consistent Energy recovery value. We’re also making some changes aimed at increasing talent build options.
+New Talent: Unstable Toxin – Envenom damage increased by 18%, but its duration is reduced by 2 seconds.
+Apex Talent: Implacable (Rank 1) has been updated – Envenom damage increased by 10%. Envenom now restores 2 Energy per combo point spent.
+Internal Bleeding has been updated – Now triggers from casting Kidney Shot and Rupture, rather than also being applied when copying Ruptures with Crimson Tempest. Damage increased by 10%.
+Iron Wire has been updated – Garrotes applied from stealth or during the Improved Garrote window now silence the target for 5 seconds. Damage reduction behavior unchanged.
+Dashing Scoundrel has been updated – Envenom’s effect now also increases the critical strike chance of your weapon poisons by 10% (was 5%). Your Energy generation is increased by 4% for each lethal poison on your weapons.
+All damage dealt increased by 3%.
+Deathmark increases the damage of your Rupture, Garrote, and Lethal Poisons by 75% (was 100%).
+Kingsbane damage reduced by 15%.
+Shrouded Suffocation increases Garrote damage by 30% (was 20%).
+Avulsion increases Rupture damage by 25% (was 20%).
+Motivated Murderer Energy increased to 30% (was 20%).
+Rapid Injection damage bonus increased to 20%/40% (was 15%/30%).
+Venomous Wounds generates more Energy when multiple targets are affected by your bleeds.
+Blindside’s chance to trigger reduced to 10% (was 15%), and 20% when the target is at low health (was 30%).
+Poison Bomb’s visual has been adjusted to make other important visuals on top of it easier to see.
+Several talents have changed positions in the talent tree.
+Deadly Momentum has been removed.
+Outlaw
+Developers’ notes: The changes to Outlaw in Curse of Ula’tek are intended to improve talent build diversity and flexibility. We’ve increased the power of some underperforming talents and pulled back some that could feel “locked in”. Killing Spree’s damage has been increased significantly because the damage it did wasn’t sufficiently stronger than using other abilities during its channel would have been. The talent should now increase your overall damage about as much as other comparable talents.
+Improved Between the Eyes has been updated – Causes Between the Eyes critical strikes to deal 2.5 times normal damage (was 3 times).
+Fast Action has been updated – Now reduces the cooldown of Between the Eyes by 8 seconds (was 5 seconds) and increases the damage bonus from each Between the Eyes stack by 1%.
+Killing Spree damage increased by 60%.
+Heavy Hitter increases the damage of attacks that generate combo points by 15%/30% (was 10%/20%).
+Zero In value per stack reduced to 2% (was 3%).
+Developers’ notes: We don’t want players to feel obligated to use off-hand daggers to maximize the value of this talent. Zero In now has a 30% chance to not proc if triggered by a weapon with 1.8 Speed, giving it the same proc rate when attacking with daggers vs. other one-handed weapons.
+Hidden Opportunity’s chance for Ambush to grant Opportunity increased to 100% (was 80%) of the chance for Sinister Strike to grant Opportunity.
+New connectors have been added between Ruthlessness and Find an Opening, and between the Flickering Steel choice node and Grand Melee.
+Subtlety
+Relentless Strikes now generates 4 Energy per combo point spent on finishing moves (was 5 Energy).
+Shadowcraft no longer stores 1 additional combo point. Frequency bonus from auto-attacks increased to 75% (was 40%).
+Developers’ notes: Energy and Combo Point generation during cooldown windows has often been overflowing. These reductions aim to reduce circumstances of over-capping resources while maintaining potent relative generation in those windows.
+Lingering Shadow now also applies to Shuriken Storm.
+Shadow Dance’s tooltip has been updated to include its threat reduction effect.
+Apex Talent: Ancient Arts now considers the total damage of Secret Technique when creating a shadow clone, instead of only its initial hit.
+Fixed an issue that caused Secret Technique damage from secondary hits to be attributed to summoned pets instead of the attacking Rogue.
+SHAMAN
+Ascendance has a new icon for all three specializations.
+Hero Talents
+Farseer
+Developers’ notes: In a previous tuning hotfix for Elemental Shaman, Farseer Spirits received a small change so they scale with the Elemental Fury talent. We are changing several other places where they weren’t scaling the same as the Shaman’s abilities.
+Chain Lightning now hits up to 5 targets (was 3).
+Lava Burst now also increases damage by a percent equal to your critical strike chance.
+Elemental
+Developers’ notes: Elemental Shaman have higher burst during their Ascendance window with the changes in Midnight than we would like. We don’t want Ascendance to stop being a noticeable damage amplifier, but the combination of effects that boosted your Elemental Overload damage from both Ascendance and Apex talents all compounded with each other. We’re spreading a lot more damage into your spells to deal consistently higher damage while still getting a nice spike during Ascendance.
+Power of the Maelstrom has been redesigned – Lightning Bolt and Chain Lightning have a 15% chance to cause your next Lava Burst to deal 20% increased damage, stacking up to 2 times. Lava Burst consumes one stack at a time.
+Developes’ notes: Supercharge and Power of the Maelstrom both were extra, random Elemental Overloads. We feel that the other changes will make your damage more consistent, while still allowing other parts of your talent tree to still increase the quantity or power of Elemental Overload spells.
+Stormkeeper has been redesigned – Your next 2 Lightning Bolts become instant cast and deal 150% increased damage, or your next 2 Chain Lightnings become instant and cause an Elemental Overload on all targets hit.
+Lava Burst damage increased by 30%. This does not apply to PvP combat.
+Lightning Bolt damage increased by 30%. This does not apply to PvP combat.
+Chain Lightning damage increased by 60%.
+Flame Shock damage increased by 60%.
+Tempest direct damage reduced by 20%.
+Healing Surge healing increased by 25%.
+Earth Shield healing increased by 25%.
+Healing Stream Totem healing increased by 25%.
+Ascendance now increases the damage of Elemental Overload by 30% (was 75%).
+Bonus Lava Bursts when activating Ascendance are now 50% of their normal value (was 100%).
+Molten Wrath now increases the damage of Lava Burst by 10% (was 15%).
+Apex Talent: Feedback Loop (Rank 1) now increases Elemental Overload damage by 10% (was 35%) and also increases Elemental damage done by 10%.
+Apex Talent: Feedback Loop (Rank 2) now grants 15%/30% critical damage bonus (was 25%/50%).
+Elemental Blast casts from Fusion of the Elements now only grant 40% of the normal duration of the Elemental Blast stat buffs (was 100%).
+Fixed an issue that caused Voltaic Blaze to not be properly affected by Elemental Fury’s critical damage bonus.
+Fixed an issue that caused Elemental Resonance to not affect periodic Elemental damage.
+Fixed an issue where Apex Talent: Feedback Loop (Rank 2) did not properly increase the critical damage of several Elemental Shaman spells.
+Hero Talents
+Stormbringer
+Supercharge has been redesigned – Lightning Bolt, Chain Lightning, and Tempest overloads deal 10% additional damage.
+Enhancement
+Healing Surge healing increased by 25%.
+Earth Shield healing increased by 25%.
+Healing Stream Totem healing increased by 25%.
+Restoration
+Healing Rain now has a 12 second cooldown and an 18 second duration. Recasting Healing Rain while one is already active will despawn the previous one. This cooldown change does not affect the Surging Totem’s Healing Rain from the Totemic Hero Talents.
+Developers’ notes: This change should allow more flexibility for the player to move Healing Rain around when that is desirable.
+WARLOCK
+Summon Demonic Gateway is now a Utility spell by default in the Cooldown Manager.
+Hero Talents
+Hellcaller
+Developers’ notes: We’re updating Blackened Soul to give Hellcaller a better tool for focusing damage into a priority target, increasing the overall flexibility of the hero talent tree rather than have it only excel in situations where multiple targets are present. However, we are keeping the functionality of Malevolence the same, so it remains a cool and impactful tool in Hellcaller’s toolkit.
+Blackened Soul has been redesigned – If the target is afflicted with your Wither, your Chaos Bolt and Shadowburn increase its stack count by 1. Each time Wither gains a stack it has a chance to collapse, consuming a stack every 1 second to deal Shadowflame damage to its host until 1 stack remains.
+Mark of Peroth’arn has been redesigned – Damaging critical strikes dealt by Wither deal 215% damage instead of the usual 200%. Damaging critical strikes dealt by Blackened Soul deal 225% damage instead of the usual 200%.
+Destruction
+Conflagration of Chaos has been redesigned – Conflagrate and Shadowburn have a 100% chance to critically strike, and their damage is increased by your critical strike chance.
+Conflagration of Chaos has been removed from the Cooldown Manager.
+Apex Talent: Embers of Nihilam (Rank 1) tooltip has been updated to show players the percent chance of Incinerate evoking an Echo of Sargeras.
+WARRIOR
+Developers’ notes: Rend is an iconic and core Warrior ability with a different relationship to each spec. Our approach to Rend in Midnight hasn’t worked out as we hoped, so we’re making changes to how each spec applies and interacts with Rend in Curse of Ula’tek.
+The Rend ability is now exclusive to Arms, has returned to being a single-target ability, and its Rage cost is reduced to 10. Cleave will apply Rend to all targets if the Warrior knows Rend.
+New Talent (Fury): Storm of Blood – Whirlwind applies Rend to all targets. Crashing Thunder causes Storm of Blood to also apply to Thunder Clap for Mountain Thane.
+New Talent (Protection): Blood and Thunder – Thunder Clap applies Rend to all targets.
+Thunder Clap no longer innately applies Rend if known.
+Javelineer has a new icon.
+Arms
+Ravager has been updated:
+Developers’ notes: Ravager is a unique ability and we want Ravager itself and its positioning to be important, but the current design puts more emphasis on its value as an AOE damage amp rather than Ravager itself. We’re redesigning Ravager slightly to address this, as well as to increase Ravager’s value in all combat situations.
+Ravager damage increased by 50%.
+Ravager no longer increases Cleave and Whirlwind damage while active. Ravager now causes all enemies it damages to take 25% increased damage from your Bleeds for 12 seconds.
+Ravager’s duration is no longer reduced by Haste.
+Bloodletting has been updated – Your abilities have a 5% increased chance to critically strike targets affected by Rend. If you know Rend, Mortal Strike inflicts Rend on targets below 35% health. Deep Wounds lasts 33% longer.
+Broad Strokes has been updated – Colossus Smash now grants 6 stacks of Sweeping Strikes on use.
+Stacks of Sweeping Strikes from the Sweeping Strikes ability and Broad Strokes will stack normally, regardless of the order in which they were used.
+Sweeping Strikes now displays the number of active Sweeping Strikes charges.
+Improved Sweeping Strikes has been removed.
+Mass Execution and Overpowering Finish are now on a choice node with each other.
+Battlelord and Master Tactician have swapped positions in the tree.
+Hero Talents
+Colossus
+Developers’ notes: Demolish’s variable cooldown has proven to be more frustrating than interesting, so we’re changing it to align closely with Colossus Smash, enabling Arms Colossus Warriors to coordinate their use for maximum devastation.
+Tide of Battle increases the damage of Overpower and Execute (was Overpower only).
+Demolish’s cooldown reduced to 30 seconds (was 45 seconds).
+Dominance of the Colossus no longer reduces the cooldown of Demolish.
+Fury
+Whirlwind has been updated:
+Developers’ notes: Whirlwind has historically been a core part of Fury gameplay, even in single-target situations. We’d like to open the door for Whirlwind to be a useful ability in single target again.
+Whirlwind now generates 3 Rage innately.
+Improved Whirlwind has been updated – No longer causes Whirlwind to generate 3 Rage innately, but still increases Rage generated by Whirlwind by 1 per target hit, up to 8 total Rage.
+New Talent: Carving Blades – Whirlwind deals 50% additional damage when it strikes only a single target. Talent is on a choice node with Meat Cleaver.
+Rampaging Ruin has been redesigned – While Improved Whirlwind is active, Rampage’s final strike slams the ground, dealing Physical damage to all enemies within 8 yards of your target. Damage reduced beyond 5 targets.
+Developers’ notes: Rampaging Ruin is intended to help alleviate the AOE target cap on Fury’s rotational AOE abilities. The current design ended up being very difficult to figure out when it was best to use Rampaging Ruin, the new design should make the choice much more intuitive.
+Hack and Slash has been updated – Rampage now has a 75% chance to refund a charge of Raging Blow and increase the damage of your next Raging Blow by 20%.
+Developer’s notes: We feel that Fury plays best when there is a degree of uncertainty about which ability you’ll use after the one you’re currently pressing. Previous iterations of Hack and Slash provided extremely regular and consistent Raging Blow resets, causing Raging Blow to almost always be available. We believe this change will help keep Fury rotations variable and allow for more difference in rotational feel between builds that emphasize Raging Blow and those that do not.
+Hero Talents
+Mountain Thane
+Developers’ notes: Thunder Clap’s base damage increased significantly in Midnight, causing overall Thunder Clap damage to rise significantly for Mountain Thane, which in turn devalued Thunder Blast. We’re moving the Crashing Thunder damage bonus into Thunder Blast itself to keep Thunder Blast feeling special and powerful.
+Thunder Blast damage increased by 40%.
+Crashing Thunder increases Thunder Clap damage by 10% (was 30%).
+Protection
+Devastating Focus has been updated – Now increases Revenge and Execute damage dealt to the target (was Revenge only).
+Bloodborne has been updated – Now increases all Bleed damage (was only Rend and Deep Wounds).
+Fueled by Violence heals you for 125% of Bleed damage dealt (was 110%).
+Ignore Pain absorb amount increased by 25%.
+Brutal Vitality adds 10% of damage dealt to Ignore Pain (was 8%).
+Ravager has been updated:
+Developers’ notes: Ravager is a unique ability and we want the Ravager itself and its positioning to be important, but the current design puts more emphasis on its value as an AOE damage amp rather than the Ravager itself. We’re redesigning Ravager slightly to address this, as well as to increase Ravager’s value in all combat situations.
+Ravager damage increased by 50%.
+Ravager no longer increases Revenge and Thunder Clap damage while active. Ravager now causes all enemies it damages to take 25% increased damage from your Bleeds for 12 seconds. Duration reduced to 4 seconds with Whirling Blade.
+Ravager’s duration is no longer reduced by Haste.
+Hero Talents
+Colossus
+Developers’ notes: Demolish’s variable cooldown is difficult to integrate smoothly into Protection’s rotation, so we’re changing the cooldown to be consistent so Demolish can be available more reliably for burst damage or additional damage mitigation.
+Demolish cooldown reduced to 30 seconds (was 45 seconds).
+Dominance of the Colossus no longer reduces the cooldown of Demolish.
+Tide of Battle increases the damage of Revenge and Execute (was Revenge only).
+Mountain Thane
+Developers’ notes: Thunder Clap’s base damage increased significantly in Midnight, causing overall Thunder Clap damage to rise significantly for Mountain Thane, which in turn devalued Thunder Blast. We’re moving the Crashing Thunder damage bonus into Thunder Blast itself to keep Thunder Blast feeling special and powerful.
+Thunder Blast damage increased by 40%.
+Crashing Thunder increases Thunder Clap damage by 10% (was 30%).
