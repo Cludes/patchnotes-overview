@@ -1,0 +1,89 @@
+CLASSES
+DEATH KNIGHT
+Frost
+Developers’ notes: We’re increasing the strength of several rotational abilities that were underperforming in the overall breakdown. Additionally, we’re improving Frost Death Knight’s consistent damage outside of cooldown windows. Obliteration gameplay and tuning during Pillar of Frost remain strong, allowing us to redistribute some power into the rest of the kit.
+Pillar of Frost now increases Strength by 20% (was 30%). This does not apply to PvP combat.
+Howling Blast damage increased by 100%. This does not apply to PvP combat.
+Empower Rune Weapon damage increased by 30%. This does not apply to PvP combat.
+Glacial Advance damage increased by 30%. This does not apply to PvP combat.
+Icy Death Torrent damage increased by 100%. This does not apply to PvP combat.
+Frost Fever damage increased by 100%. This does not apply to PvP combat.
+Remorseless Winter damage increased by 100%. This does not apply to PvP combat.
+Frostscythe damage increased by 20%. This does not apply to PvP combat.
+Frost Strike damage increased by 25%. Does not affect Frostbane. This does not apply to PvP combat.
+Obliterate damage reduced by 25%. This does not apply to PvP combat.
+Breath of Sindragosa damage reduced by 20%. This does not apply to PvP combat.
+Frostbane damage reduced by 30%. This does not apply to PvP combat.
+Frostwyrm’s Fury damage reduced by 20%. This does not apply to PvP combat.
+Permafrost grants a shield equal to 35% of damage dealt (was 30%). This does not apply to PvP combat.
+Hero Talents
+Deathbringer
+Wither Away now causes Frost Fever to deal its damage 75% faster (was 100%). This does not apply to PvP combat.
+Deathly Blows now increases Frost Strike damage by 35% (was 15%). This does not apply to PvP combat.
+Reaper’s Mark cast and explosion damage reduced by 25%. This does not apply to PvP combat.
+Exterminate damage reduced by 17%. This does not apply to PvP combat.
+Rider of the Apocalypse
+Whitemane’s Undeath damage reduced by 30%. This does not apply to PvP combat.
+Unholy
+Developers’ notes: We are addressing the difficulty that Dread Plague creates for Unholy Death Knight’s when switching priority targets. In addition, we would like to bring the extended duration of plagues back to a more reasonable range.
+Blightburst now causes Putrefy to extend the duration of plagues by 3 seconds (was 4.5 seconds).
+Runic Power spenders now extend the duration of plagues by 1 second (was 1.5 seconds).
+Dread Plague now retains its extended duration when applied to a new target while within 40 yards of the Death Knight.
+DEMON HUNTER
+Havoc
+Trail of Ruin has been updated – Damage is now applied immediately, rather than as a damage over time effect over 4 seconds.
+Serrated Glaive has been updated – Effect is now a buff on the Demon Hunter with a 12 second duration, rather than a debuff on enemy targets with a 15 second duration.
+Blind Fury now causes Eye Beam to generate 10/20 Fury per second (was 15/30 Fury).
+Inner Demon has moved and is now a choice node option with Chaos Theory (was a choice node option with Chaotic Transformation).
+Vengeance
+Sigil of Chains is now learned at level 35 and is no longer a talent.
+Roaring Fire has moved to Sigil of Chains’ old location (was a choice node with Sigil of Silence).
+Sigil of Silence and Feed the Demon have swapped positions in the talent tree.
+DRUID
+Guardian
+Apex Talents: Wild Guardian has been updated –
+Bonus rage moved from rank 1 to rank 3.
+Base chance adjusted to 10%.
+Spirit rage generation increased to 8.
+Rank 3 grants one guaranteed spirit and increases Thrash and Mangle damage while a spirit is active.
+EVOKER
+Panacea healing increased by 25%.
+Augmentation
+Defy Fate healing increased by 25%.
+Molten Blood healing increased by 25%.
+MONK
+Silent Sanctuary healing increased by 25%.
+Windwalker
+Expel Harm healing increased by 25%.
+PALADIN
+Protection
+Hammer of Light, Divine Resonance, Sacrosanct Crusade, Bulwark of Order, Blessed Word, Empyreal Ward, Strength in Adversity, and Seal of Reprisal can now be tracked with the Cooldown Manager.
+Retribution
+Radiance of the Concentrated Flame 4-set bonus effect updated – Consuming Divine Purpose with Divine Storm causes your next 2 Templar’s Verdicts to unleash Divine Arbiter at its target, dealing Holy damage and Holy damage to enemies within 8 yards.
+Developers’ notes: Granting free casts of Templar’s Verdict after consuming Divine Purpose impacted the Holy Power economy more than we’d like.
+SHAMAN
+Reactive Warding healing increased by 25%.
+Elemental
+Stormkeeper has been updated and no longer causes Lightning Bolt to generate an additional Elemental Overload. The other effects are unchanged.
+Developers’ notes: The PTR note from last week was confusing as it said Stormkeeper had been redesigned. The only change currently to Stormkeeper between 12.0.7 and 12.1 is that Stormkeeper no longer causes Lightning Bolt to generate an additional Elemental Overload.
+Enhancement
+Developers’ notes: We’re happy with Enhancement Shaman’s gameplay going into Curse of Ula’tek. Our goal with these changes is to preserve that gameplay while improving performance outside of cooldown windows, where damage can feel weak. Strong interactions between Windfury procs and Maelstrom Weapon generation were making it difficult for the downtime between cooldowns to breathe.
+Lightning Bolt damage increased by 20%.
+Chain Lightning damage increased by 20%.
+Lava Lash damage increased by 15%.
+Stormstrike damage increased by 15%.
+Melee damage increased by 15%.
+Doom Winds now increases the chance of Windfury Weapon activating by 50% (was 100%).
+Hero Talents
+Stormbringer
+Tempest main target damage reduced by 10%.
+Tempest secondary target damage reduced by 30%.
+Totemic
+Surging Totem Tremor damage reduced by 15%.
+Surging Totem Surging Bolt damage reduced by 10%.
+WARLOCK
+Drain Life health drain increased by 25%.
+Zevrim’s Resilience healing increased by 25%.
+WARRIOR
+Arms
+Ignore Pain absorb increased by 25%.

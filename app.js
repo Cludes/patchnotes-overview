@@ -43,7 +43,11 @@
 
   // ---- source links ----
   if ($("#src-link")) $("#src-link").href = PATCH.source;
-  if ($("#footer-src")) $("#footer-src").innerHTML = "Source: <a href='" + esc(PATCH.source) + "' target='_blank' rel='noopener'>" + esc(PATCH.source) + "</a>";
+  if ($("#footer-src")) {
+    var fs = "Sources: <a href='" + esc(PATCH.source) + "' target='_blank' rel='noopener'>build 1 class notes</a>";
+    if (PATCH.source2) fs += " &middot; <a href='" + esc(PATCH.source2) + "' target='_blank' rel='noopener'>Week 2 weekly notes</a>";
+    $("#footer-src").innerHTML = fs;
+  }
 
   // ---- global structural changes ----
   var gl = $("#global-list");
@@ -108,9 +112,9 @@
   var CHEV = "<span class='chev' aria-hidden='true'>&rsaquo;</span>";
 
   CLASSES.forEach(function (cls) {
-    var nB = 0, nN = 0, nChanges = 0;
+    var nB = 0, nN = 0, nChanges = 0, nWk2 = 0;
     cls.specs.forEach(function (sp) {
-      sp.changes.forEach(function (c) { nChanges++; if (c.d === "buff") nB++; else if (c.d === "nerf") nN++; });
+      sp.changes.forEach(function (c) { nChanges++; if (c.d === "buff") nB++; else if (c.d === "nerf") nN++; if (c.b === 2) nWk2++; });
     });
     // count only real specs (exclude Class-wide / hero-tree shared sections)
     var realSpecs = cls.specs.filter(function (sp) { return sp.role !== "All" && sp.role !== "Shared"; }).length;
@@ -126,6 +130,7 @@
       "<span class='cls-name'>" + esc(cls.name) + "</span>" +
       "<span class='cls-meta'>" + specLabel + " &middot; " + nChanges + " changes</span>" +
       "<span class='cls-tally'>" +
+        (nWk2 ? "<span class='minichip w'>" + nWk2 + " Wk2</span>" : "") +
         (nB ? "<span class='minichip b'>+" + nB + "</span>" : "") +
         (nN ? "<span class='minichip n'>-" + nN + "</span>" : "") +
         CHEV +
@@ -151,10 +156,11 @@
         var tr = el("tr");
         tr.setAttribute("data-dir", c.d);
         tr.setAttribute("data-kind", c.k);
+        tr.setAttribute("data-build", c.b ? String(c.b) : "1");
         var changeCell = (p !== null)
           ? "<span class='change " + c.d + "'>" + fmtPct(p) + "</span>"
           : "<span class='tag " + (c.d === "buff" ? "buff" : c.d === "nerf" ? "nerf" : "neutral") + "'>" + esc(c.d) + "</span>";
-        var typeCell = "<span class='tag kind'>" + kindLabel(c.k) + "</span>" + (c.t ? " <span class='note'>" + esc(c.t) + "</span>" : "");
+        var typeCell = (c.b === 2 ? "<span class='tag wk2'>Wk2</span> " : "") + "<span class='tag kind'>" + kindLabel(c.k) + "</span>" + (c.t ? " <span class='note'>" + esc(c.t) + "</span>" : "");
         tr.innerHTML =
           "<td class='ability'>" + esc(c.a) + "</td>" +
           "<td class='metric'>" + (c.m ? esc(c.m) : "<span class='muted'>-</span>") + "</td>" +
@@ -181,6 +187,7 @@
     if (f === "buff") return dir === "buff";
     if (f === "nerf") return dir === "nerf";
     if (f === "structural") return kind === "rework" || kind === "new" || kind === "removed";
+    if (f === "wk2") return tr.getAttribute("data-build") === "2";
     return true;
   }
   function applyFilter(f) {

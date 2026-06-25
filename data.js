@@ -23,10 +23,11 @@
 window.PATCH = {
   name: "Curse of Ula'tek",
   patch: "Patch 12.1",
-  build: "First 12.1 PTR build",
+  build: "12.1 PTR builds 1-2 (through Week 2)",
   expansion: "World of Warcraft: Midnight",
   source: "https://www.wowhead.com/news/class-changes-for-first-patch-12-1-ptr-build-dps-cooldowns-nerfed-381912",
-  captured: "2026-06-20",
+  source2: "https://www.wowhead.com/news/earthen-racial-experience-nerfs-and-class-tuning-weekly-patch-12-1-ptr-381979",
+  captured: "2026-06-26",
   global: [
     "Player health and creature damage increased by 25% at max level. Health consumable values adjusted to match. Several DPS/Tank healing and absorb spells are being buffed so they keep their relative impact against the larger health pool.",
     "Throughput of major DPS cooldowns is being lowered for several specs, with their steady-state (non-cooldown) damage increased to compensate. Stated intent is roughly net-neutral total damage with a flatter damage profile.",
@@ -46,8 +47,26 @@ window.CLASSES = [
         { a:"Sanguinary Burst", m:"heal % of damage dealt", o:15, n:18, d:"buff", k:"tune" },
         { a:"Umbilicus Eternus", m:"absorb multiplier of Blood Plague dmg", o:5, n:6, u:"x", d:"buff", k:"tune" }
       ]},
-      { name: "Frost", role: "DPS (melee)", changes: [
-        { a:"Permafrost", m:"shield % of damage dealt", o:30, n:35, d:"buff", k:"tune", t:"Defensive only; no offensive changes this build." }
+      { name: "Frost", role: "DPS (melee)", note:"Build 1 only touched Permafrost; Week 2 brought a major retune - Obliteration/Pillar burst trimmed, steady abilities raised hard. Most lines are PvE-only.", changes: [
+        { a:"Permafrost", m:"shield % of damage dealt", o:30, n:35, d:"buff", k:"tune" },
+        { a:"Pillar of Frost", m:"Strength bonus", o:30, n:20, u:"%", d:"nerf", k:"tune", b:2, t:"PvE only." },
+        { a:"Howling Blast", m:"damage", r:100, d:"buff", k:"tune", b:2, t:"PvE only." },
+        { a:"Empower Rune Weapon", m:"damage", r:30, d:"buff", k:"tune", b:2, t:"PvE only." },
+        { a:"Glacial Advance", m:"damage", r:30, d:"buff", k:"tune", b:2, t:"PvE only." },
+        { a:"Icy Death Torrent", m:"damage", r:100, d:"buff", k:"tune", b:2, t:"PvE only." },
+        { a:"Frost Fever", m:"damage", r:100, d:"buff", k:"tune", b:2, t:"PvE only." },
+        { a:"Remorseless Winter", m:"damage", r:100, d:"buff", k:"tune", b:2, t:"PvE only." },
+        { a:"Frostscythe", m:"damage", r:20, d:"buff", k:"tune", b:2, t:"PvE only." },
+        { a:"Frost Strike", m:"damage", r:25, d:"buff", k:"tune", b:2, t:"Does not affect Frostbane. PvE only." },
+        { a:"Obliterate", m:"damage", r:-25, d:"nerf", k:"tune", b:2, t:"PvE only." },
+        { a:"Breath of Sindragosa", m:"damage", r:-20, d:"nerf", k:"tune", b:2, t:"PvE only." },
+        { a:"Frostbane", m:"damage", r:-30, d:"nerf", k:"tune", b:2, t:"PvE only." },
+        { a:"Frostwyrm's Fury", m:"damage", r:-20, d:"nerf", k:"tune", b:2, t:"PvE only." },
+        { a:"Wither Away (Deathbringer)", m:"Frost Fever tick-rate bonus", o:100, n:75, u:"%", d:"nerf", k:"tune", b:2, t:"PvE only." },
+        { a:"Deathly Blows (Deathbringer)", m:"Frost Strike damage bonus", o:15, n:35, u:"%", d:"buff", k:"tune", b:2, t:"PvE only." },
+        { a:"Reaper's Mark (Deathbringer)", m:"cast & explosion damage", r:-25, d:"nerf", k:"tune", b:2, t:"PvE only." },
+        { a:"Exterminate (Deathbringer)", m:"damage", r:-17, d:"nerf", k:"tune", b:2, t:"PvE only." },
+        { a:"Whitemane's Undeath (Rider of the Apocalypse)", m:"damage", r:-30, d:"nerf", k:"tune", b:2, t:"PvE only." }
       ]},
       { name: "Unholy", role: "DPS (melee)", note:"Cooldown/steady redistribution plus a summon-density cleanup (fewer pets overall).", changes: [
         { a:"Reanimation -> Lord of the Dead", d:"neutral", k:"rework", t:"Renamed; secondary effect redesigned (sacrifice 3 Magus to summon Lord of the Dead for 15s)." },
@@ -60,7 +79,10 @@ window.CLASSES = [
         { a:"Graveyard", m:"damage", r:20, d:"buff", k:"tune" },
         { a:"Commander of the Dead", m:"summoned-creature damage bonus (R1/R2)", o:15, n:10, u:"%", d:"nerf", k:"tune", t:"Per rank: 15%->10% and 30%->20% (same -33% each)." },
         { a:"Ruptured Viscera", d:"nerf", k:"tune", t:"Now deals reduced damage beyond 5 targets (AoE cap)." },
-        { a:"Permafrost", m:"shield % of damage dealt", o:30, n:35, d:"buff", k:"tune" }
+        { a:"Permafrost", m:"shield % of damage dealt", o:30, n:35, d:"buff", k:"tune" },
+        { a:"Blightburst", m:"Putrefy plague-duration extension", o:4.5, n:3, u:"s", d:"nerf", k:"tune", b:2 },
+        { a:"Runic Power spenders", m:"plague-duration extension", o:1.5, n:1, u:"s", d:"nerf", k:"tune", b:2 },
+        { a:"Dread Plague", d:"buff", k:"rework", b:2, t:"Now keeps its extended duration when re-applied to a new target within 40yd (fixes target-swapping)." }
       ]}
     ]
   },
@@ -77,7 +99,11 @@ window.CLASSES = [
       { name: "Havoc", role: "DPS (melee)", changes: [
         { a:"Demon Blades / Blade Dance / Chaos Strike", d:"neutral", k:"qol", t:"Now require Warglaives, Axes, Swords or Fist Weapons (itemization)." },
         { a:"Never Say Die (new)", d:"buff", k:"new", t:"+3% damage above 50% HP; +5% Leech below 50% HP." },
-        { a:"Dash of Chaos", d:"neutral", k:"removed", t:"Removed (mobility/defensive)." }
+        { a:"Dash of Chaos", d:"neutral", k:"removed", t:"Removed (mobility/defensive)." },
+        { a:"Trail of Ruin", d:"neutral", k:"rework", b:2, t:"Damage now applied immediately instead of a 4s damage-over-time." },
+        { a:"Serrated Glaive", d:"neutral", k:"rework", b:2, t:"Now a 12s buff on you instead of a 15s debuff on the target." },
+        { a:"Blind Fury", m:"Eye Beam Fury per second (R1/R2)", o:15, n:10, d:"nerf", k:"tune", b:2, t:"Per rank 15->10 and 30->20." },
+        { a:"Inner Demon", d:"neutral", k:"rework", b:2, t:"Now a choice node with Chaos Theory." }
       ]},
       { name: "Vengeance", role: "Tank", changes: [
         { a:"Charred Warblades", m:"heal % of Fire damage", o:4, n:5, d:"buff", k:"tune" },
@@ -86,7 +112,9 @@ window.CLASSES = [
         { a:"Frailty", m:"heal % of damage to afflicted", o:8, n:10, d:"buff", k:"tune" },
         { a:"Feast of Souls", m:"healing", r:25, d:"buff", k:"tune" },
         { a:"Revel in Pain", m:"shield % of Fire damage", o:5, n:6, d:"buff", k:"tune" },
-        { a:"Fracture / Soul Cleave", d:"neutral", k:"qol", t:"Now require Warglaives, Axes, Swords or Fist Weapons." }
+        { a:"Fracture / Soul Cleave", d:"neutral", k:"qol", t:"Now require Warglaives, Axes, Swords or Fist Weapons." },
+        { a:"Sigil of Chains", d:"buff", k:"rework", b:2, t:"Now learned at level 35, no longer a talent (frees a talent point)." },
+        { a:"Roaring Fire / Sigil of Silence / Feed the Demon", d:"neutral", k:"qol", b:2, t:"Talent positions changed." }
       ]}
     ]
   },
@@ -158,19 +186,25 @@ window.CLASSES = [
         { a:"Elune's Favored", m:"heal % of Arcane damage", o:15, n:18, u:"%", d:"buff", k:"tune" },
         { a:"Lunar Beam", m:"healing", r:25, d:"buff", k:"tune" },
         { a:"Lunation", d:"neutral", k:"rework", t:"Now -20s flat to Lunar Beam CD (was 3s per Arcane ability)." },
-        { a:"Boundless Moonlight (Elune's Chosen)", m:"Lunar Beam Leech", o:10, n:12, u:"%", d:"buff", k:"tune" }
+        { a:"Boundless Moonlight (Elune's Chosen)", m:"Lunar Beam Leech", o:10, n:12, u:"%", d:"buff", k:"tune" },
+        { a:"Wild Guardian (updated)", d:"neutral", k:"rework", b:2, t:"Week 2: base proc chance 10%, spirit Rage generation 8, bonus Rage moved to rank 3; rank 3 now grants a guaranteed spirit and boosts Thrash/Mangle while a spirit is active." }
       ]}
     ]
   },
   {
     name: "Evoker", color: "#33937F",
     specs: [
+      { name: "Class-wide", role: "All", changes: [
+        { a:"Panacea", m:"healing", r:25, d:"buff", k:"tune", b:2 }
+      ]},
       { name: "Augmentation", role: "DPS (ranged support)", changes: [
         { a:"Duplicate - Upheaval", d:"buff", k:"qol", t:"Duplicate Upheavals no longer knock enemies into the air (dungeon QoL)." },
         { a:"Living Flame", m:"healing", r:25, d:"buff", k:"tune" },
         { a:"Verdant Embrace", m:"healing", r:25, d:"buff", k:"tune" },
         { a:"Emerald Blossom", m:"healing", r:25, d:"buff", k:"tune" },
-        { a:"Double-time (Chronowarden)", d:"neutral", k:"rework", t:"Ebon Might crit stat bonus now lasts 15s." }
+        { a:"Double-time (Chronowarden)", d:"neutral", k:"rework", t:"Ebon Might crit stat bonus now lasts 15s." },
+        { a:"Defy Fate", m:"healing", r:25, d:"buff", k:"tune", b:2 },
+        { a:"Molten Blood", m:"healing", r:25, d:"buff", k:"tune", b:2 }
       ]},
       { name: "Devastation", role: "DPS (ranged)", note:"Apex reworked to extend the Dragonrage window via new Unbound Flame. Profile change, ~flat.", changes: [
         { a:"Rising Fury (R3)", d:"neutral", k:"rework", t:"After Dragonrage ends, persists 4s/stack; Dragonrage becomes Unbound Flame (4 casts)." },
@@ -281,7 +315,8 @@ window.CLASSES = [
     specs: [
       { name: "Class-wide", role: "All", changes: [
         { a:"Chi Transfer", m:"Touch of Death self-heal % of damage", o:50, n:60, d:"buff", k:"tune" },
-        { a:"Vigorous Expulsion", m:"Expel Harm healing bonus", o:5, n:6, u:"%", d:"buff", k:"tune" }
+        { a:"Vigorous Expulsion", m:"Expel Harm healing bonus", o:5, n:6, u:"%", d:"buff", k:"tune" },
+        { a:"Silent Sanctuary", m:"healing", r:25, d:"buff", k:"tune", b:2 }
       ]},
       { name: "Brewmaster", role: "Tank", changes: [
         { a:"Staggering Strikes", m:"Stagger reduction", r:25, d:"buff", k:"tune" },
@@ -308,7 +343,8 @@ window.CLASSES = [
         { a:"Tigereye Brew", m:"crit damage (R1/R2)", o:10, n:5, u:"%", d:"nerf", k:"tune", t:"Per rank 10%->5% and 20%->10%." },
         { a:"Vivify", m:"healing", r:25, d:"buff", k:"tune" },
         { a:"Celestial Conduit (Conduit of the Celestials)", m:"damage", r:-25, d:"nerf", k:"tune" },
-        { a:"Temple Training (Conduit of the Celestials)", m:"Fists of Fury & SCK damage", o:10, n:30, u:"%", d:"buff", k:"tune" }
+        { a:"Temple Training (Conduit of the Celestials)", m:"Fists of Fury & SCK damage", o:10, n:30, u:"%", d:"buff", k:"tune" },
+        { a:"Expel Harm", m:"healing", r:25, d:"buff", k:"tune", b:2 }
       ]}
     ]
   },
@@ -339,7 +375,8 @@ window.CLASSES = [
         { a:"Bulwark of Order", m:"absorb % of Avenger's Shield damage", o:60, n:75, u:"%", d:"buff", k:"tune" },
         { a:"Solace", m:"Consecration self-heal % of damage", o:300, n:375, u:"%", d:"buff", k:"tune" },
         { a:"Sentinel", d:"buff", k:"rework", t:"Duration increased to 20s; moved; now inherits Avenging Wrath crit bonus." },
-        { a:"Sanctified Wrath", d:"neutral", k:"removed" }
+        { a:"Sanctified Wrath", d:"neutral", k:"removed" },
+        { a:"Cooldown Manager tracking", d:"neutral", k:"qol", b:2, t:"Hammer of Light, Divine Resonance, Sacrosanct Crusade, Bulwark of Order, Blessed Word, Empyreal Ward, Strength in Adversity and Seal of Reprisal are now trackable." }
       ]},
       { name: "Retribution", role: "DPS (melee)", note:"Cooldown burst trimmed, baseline strikes raised; rotation de-pressured. ~Flat net.", changes: [
         { a:"Light Within (R1)", d:"buff", k:"rework", t:"Art of War and Righteous Cause can each accumulate one more." },
@@ -360,7 +397,8 @@ window.CLASSES = [
         { a:"Word of Glory", m:"healing", r:25, d:"buff", k:"tune" },
         { a:"Eternal Flame", m:"healing", r:25, d:"buff", k:"tune" },
         { a:"Hammer of Light (Templar)", m:"damage", r:-30, d:"nerf", k:"tune", t:"PvE only." },
-        { a:"Hammer of Light (Templar)", m:"Holy Power cost", o:5, n:3, d:"buff", k:"tune", t:"Cheaper." }
+        { a:"Hammer of Light (Templar)", m:"Holy Power cost", o:5, n:3, d:"buff", k:"tune", t:"Cheaper." },
+        { a:"Radiance of the Concentrated Flame (4-set)", d:"neutral", k:"rework", b:2, t:"Tier set: consuming Divine Purpose with Divine Storm now empowers your next 2 Templar's Verdicts with Divine Arbiter (was free Templar's Verdict casts)." }
       ]}
     ]
   },
@@ -440,13 +478,16 @@ window.CLASSES = [
   {
     name: "Shaman", color: "#0070DD",
     specs: [
+      { name: "Class-wide", role: "All", changes: [
+        { a:"Reactive Warding", m:"healing", r:25, d:"buff", k:"tune", b:2 }
+      ]},
       { name: "Farseer (hero)", role: "Shared", changes: [
         { a:"Chain Lightning", m:"max targets", o:3, n:5, d:"buff", k:"tune" },
         { a:"Lava Burst", d:"buff", k:"tune", t:"Now also gains damage equal to your crit chance." }
       ]},
       { name: "Elemental", role: "DPS (ranged)", note:"Hardest cooldown squish in the patch: Ascendance burst slashed, baseline (and AoE) damage raised a lot.", changes: [
         { a:"Power of the Maelstrom", d:"neutral", k:"rework", t:"Now: LB/CL 15% chance to make next Lava Burst +20%, stacking 2x." },
-        { a:"Stormkeeper", d:"neutral", k:"rework", t:"Next 2 LB instant +150%, or next 2 CL instant + Overload all." },
+        { a:"Stormkeeper", d:"neutral", k:"rework", b:2, t:"Corrected in Week 2: last week's 'redesigned' note was a mistake. The only change from 12.0.7 is that Stormkeeper no longer makes Lightning Bolt generate an extra Elemental Overload." },
         { a:"Lava Burst", m:"damage", r:30, d:"buff", k:"tune", t:"PvE only." },
         { a:"Lightning Bolt", m:"damage", r:30, d:"buff", k:"tune", t:"PvE only." },
         { a:"Chain Lightning", m:"damage", r:60, d:"buff", k:"tune" },
@@ -463,10 +504,20 @@ window.CLASSES = [
         { a:"Healing Stream Totem", m:"healing", r:25, d:"buff", k:"tune" },
         { a:"Supercharge (Stormbringer)", d:"neutral", k:"rework", t:"LB/CL/Tempest overloads now +10% damage." }
       ]},
-      { name: "Enhancement", role: "DPS (melee)", note:"Only healing buffs this build; offense unchanged.", changes: [
+      { name: "Enhancement", role: "DPS (melee)", note:"Build 1 only had healing buffs; Week 2 added a real retune - steady melee/spell damage up, Doom Winds and Tempest/Totemic burst trimmed.", changes: [
         { a:"Healing Surge", m:"healing", r:25, d:"buff", k:"tune" },
         { a:"Earth Shield", m:"healing", r:25, d:"buff", k:"tune" },
-        { a:"Healing Stream Totem", m:"healing", r:25, d:"buff", k:"tune" }
+        { a:"Healing Stream Totem", m:"healing", r:25, d:"buff", k:"tune" },
+        { a:"Lightning Bolt", m:"damage", r:20, d:"buff", k:"tune", b:2 },
+        { a:"Chain Lightning", m:"damage", r:20, d:"buff", k:"tune", b:2 },
+        { a:"Lava Lash", m:"damage", r:15, d:"buff", k:"tune", b:2 },
+        { a:"Stormstrike", m:"damage", r:15, d:"buff", k:"tune", b:2 },
+        { a:"Melee damage", m:"damage", r:15, d:"buff", k:"tune", b:2 },
+        { a:"Doom Winds", m:"Windfury Weapon activation chance bonus", o:100, n:50, u:"%", d:"nerf", k:"tune", b:2 },
+        { a:"Tempest (Stormbringer)", m:"main-target damage", r:-10, d:"nerf", k:"tune", b:2 },
+        { a:"Tempest (Stormbringer)", m:"secondary-target damage", r:-30, d:"nerf", k:"tune", b:2 },
+        { a:"Surging Totem Tremor (Totemic)", m:"damage", r:-15, d:"nerf", k:"tune", b:2 },
+        { a:"Surging Totem Surging Bolt (Totemic)", m:"damage", r:-10, d:"nerf", k:"tune", b:2 }
       ]},
       { name: "Restoration", role: "Healer", changes: [
         { a:"Healing Rain", d:"neutral", k:"qol", t:"Now 12s CD / 18s duration; recasting despawns the old one." }
@@ -480,7 +531,9 @@ window.CLASSES = [
         { a:"Summon Demonic Gateway", d:"neutral", k:"qol", t:"Now a Utility spell by default in the Cooldown Manager." },
         { a:"Blackened Soul (Hellcaller)", d:"neutral", k:"rework", t:"Chaos Bolt/Shadowburn now add Wither stacks for priority-target focus." },
         { a:"Mark of Peroth'arn (Hellcaller) - Wither", m:"critical strike damage", o:200, n:215, u:"%", d:"buff", k:"tune" },
-        { a:"Mark of Peroth'arn (Hellcaller) - Blackened Soul", m:"critical strike damage", o:200, n:225, u:"%", d:"buff", k:"tune" }
+        { a:"Mark of Peroth'arn (Hellcaller) - Blackened Soul", m:"critical strike damage", o:200, n:225, u:"%", d:"buff", k:"tune" },
+        { a:"Drain Life", m:"health drained", r:25, d:"buff", k:"tune", b:2 },
+        { a:"Zevrim's Resilience", m:"healing", r:25, d:"buff", k:"tune", b:2 }
       ]},
       { name: "Destruction", role: "DPS (ranged)", changes: [
         { a:"Conflagration of Chaos", d:"buff", k:"rework", t:"Conflagrate & Shadowburn now always crit and scale damage with crit chance." },
@@ -504,7 +557,8 @@ window.CLASSES = [
         { a:"Broad Strokes", d:"neutral", k:"rework", t:"Colossus Smash now grants 6 Sweeping Strikes stacks." },
         { a:"Improved Sweeping Strikes", d:"neutral", k:"removed" },
         { a:"Tide of Battle (Colossus)", d:"buff", k:"rework", t:"Now boosts Overpower AND Execute." },
-        { a:"Demolish (Colossus)", m:"cooldown", o:45, n:30, u:"s", d:"buff", k:"tune", t:"More frequent (Dominance no longer reduces it)." }
+        { a:"Demolish (Colossus)", m:"cooldown", o:45, n:30, u:"s", d:"buff", k:"tune", t:"More frequent (Dominance no longer reduces it)." },
+        { a:"Ignore Pain", m:"absorb", r:25, d:"buff", k:"tune", b:2 }
       ]},
       { name: "Fury", role: "DPS (melee)", note:"Whirlwind made useful in single target; mostly reworks/QoL.", changes: [
         { a:"Whirlwind", d:"buff", k:"rework", t:"Now generates 3 Rage innately." },

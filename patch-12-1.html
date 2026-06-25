@@ -16,10 +16,11 @@
   <div class="wrap">
     <div class="eyebrow">World of Warcraft: Midnight &middot; PTR Development Notes</div>
     <h1>Patch 12.1 &ldquo;Curse of Ula&rsquo;tek&rdquo;
-      <span class="sub">Every class change from the first 12.1 PTR build, with the math worked out for every number, a cooldown-squish scorecard, and a reroll read.</span>
+      <span class="sub">Every class change across the 12.1 PTR builds (now including the Week 2 weekly notes), with the math worked out for every number, a cooldown-squish scorecard, and a reroll read.</span>
     </h1>
     <div class="disclaimer">
-      <b>Read this first.</b> This is a <b>first PTR build</b> and values will change. Percentages are computed directly from Blizzard&rsquo;s
+      <b>Read this first.</b> This covers <b>PTR builds 1-2 (through Week 2)</b> and values will change. Week 2 additions carry a
+      <span class="tag wk2">Wk2</span> tag. Percentages are computed directly from Blizzard&rsquo;s
       stated old &rarr; new values using <code>(new - old) / old</code>, so each line is exact. The &ldquo;biggest buffs/nerfs&rdquo; and reroll
       sections are an <b>interpretation of the direction and size</b> of those changes, not sims. Blizzard&rsquo;s stated intent for most DPS
       specs is roughly <b>net-neutral total damage</b> with a flatter profile, so a big cooldown nerf does not always mean a real DPS loss.
@@ -37,7 +38,7 @@
 
   <!-- SUMMARY -->
   <section id="summary">
-    <div class="sec-head"><h2>At a glance</h2><span class="kicker">336 change lines</span></div>
+    <div class="sec-head"><h2>At a glance</h2><span class="kicker">385 change lines</span></div>
     <div class="stats" id="stats"></div>
     <p class="small muted" style="margin-top:11px">Counts are every individual change line, tagged by gameplay direction. Most &ldquo;nerf&rdquo;
     lines are paired with a compensating steady-state buff on the same spec, which is why the totals lean green.</p>
@@ -66,6 +67,8 @@
           <tr><td class="spec">Balance Druid</td><td>Astral Power gen + free procs cut (Orbit Breaker 60%&rarr;50%, Touch the Cosmos 15%&rarr;12% / 20%&rarr;15%)</td><td>All damage +4%, Starsurge/Starfall +10%, bigger spenders</td><td class="dir">~Flat; rewards pooling AP</td></tr>
           <tr><td class="spec">Frost Mage</td><td>Hand of Frost R2 1/2%&rarr;0.5/1% (-50%, Hero-talent burst)</td><td>All damage +4%</td><td class="dir">~Flat, steadier</td></tr>
           <tr><td class="spec">Devastation Evoker</td><td>Dragonrage no longer front-loads (Rising Fury reworked)</td><td>Post-Dragonrage <b>Unbound Flame</b> (4 casts) extends the window</td><td class="dir">Profile change, ~flat</td></tr>
+          <tr><td class="spec">Frost DK <span class="tag wk2">Wk2</span></td><td>Pillar of Frost Strength 30%&rarr;20%; Obliterate -25%; Breath of Sindragosa -20%; Frostwyrm&rsquo;s Fury -20%</td><td>Howling Blast/Frost Fever/Remorseless Winter/Icy Death Torrent <b>+100%</b>; Glacial Advance +30%; Frost Strike +25%</td><td class="dir">Week 2 redistribution (PvE)</td></tr>
+          <tr><td class="spec">Enhancement Shaman <span class="tag wk2">Wk2</span></td><td>Doom Winds Windfury chance 100%&rarr;50%; Tempest -10%/-30%; Surging Totem -15%/-10%</td><td>Lightning Bolt/Chain Lightning +20%; Lava Lash/Stormstrike/melee +15%</td><td class="dir">Week 2: steadier between cooldowns</td></tr>
         </tbody>
       </table>
     </div>
@@ -107,8 +110,9 @@
       </div>
     </div>
     <div class="card" style="margin-top:14px">
-      <b>Untouched this build:</b> <span class="muted">Affliction &amp; Demonology Warlock got no changes. Frost DK and Enhancement Shaman
-      had no offensive changes (only a defensive/healing bump). If you main these, nothing here moves your damage.</span>
+      <b>Changed since build 1:</b> <span class="muted"><b>Frost DK</b> and <b>Enhancement Shaman</b> were barely touched in build 1 but
+      got a full damage retune in <span class="tag wk2">Wk2</span>. <b>Affliction &amp; Demonology Warlock</b> still have no spec-specific
+      changes across either build (Warlock&rsquo;s only edits are class-wide/Hellcaller).</span>
     </div>
   </section>
 
@@ -139,6 +143,7 @@
         <button data-f="buff">Buffs</button>
         <button data-f="nerf">Nerfs</button>
         <button data-f="structural">Reworks &amp; new</button>
+        <button data-f="wk2">Week 2</button>
       </div>
       <button class="toolbtn" id="expand-all">Expand all</button>
       <button class="toolbtn" id="collapse-all">Collapse all</button>

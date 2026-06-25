@@ -124,6 +124,8 @@ td.note { color: var(--dim); font-size: 13px; }
 .tag.neutral { color: var(--neutral); background: var(--neutral-bg); }
 .tag.role { color: var(--gold); background: rgba(230,180,85,0.13); }
 .tag.kind { color: var(--faint); background: var(--panel-2); border: 1px solid var(--line); }
+.tag.wk2 { color: #ffd479; background: rgba(230,180,85,0.16); border: 1px solid rgba(230,180,85,0.35); }
+.minichip.w { color: #ffd479; background: rgba(230,180,85,0.16); }
 
 /* Accordion class blocks */
 .toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 16px; }
