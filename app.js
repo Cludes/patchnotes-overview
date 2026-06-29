@@ -95,6 +95,8 @@
     var sep0 = el("span", "navsep"); sep0.textContent = "/"; toc.appendChild(sep0);
     var nm = el("a", null, "Net model"); nm.href = "net-change.html"; toc.appendChild(nm);
     var sep0b = el("span", "navsep"); sep0b.textContent = "/"; toc.appendChild(sep0b);
+    var ts = el("a", null, "Tier sets"); ts.href = "tier-sets.html"; toc.appendChild(ts);
+    var sep0d = el("span", "navsep"); sep0d.textContent = "/"; toc.appendChild(sep0d);
     var lt = el("a", null, "Live tuning"); lt.href = "live-tuning.html"; toc.appendChild(lt);
     var sep0c = el("span", "navsep"); sep0c.textContent = "/"; toc.appendChild(sep0c);
     [["global", "Structural"], ["summary", "Glance"], ["scorecard", "Scorecard"],
@@ -181,8 +183,8 @@
     mount.appendChild(det);
   });
 
-  // ---- filters ----
-  var currentFilter = "all";
+  // ---- filters + search ----
+  var currentFilter = "all", currentSearch = "";
   function rowVisible(tr, f) {
     if (f === "all") return true;
     var dir = tr.getAttribute("data-dir"), kind = tr.getAttribute("data-kind");
@@ -192,14 +194,19 @@
     if (f === "wk2") return tr.getAttribute("data-build") === "2";
     return true;
   }
-  function applyFilter(f) {
-    currentFilter = f;
+  function rowMatch(tr) {
+    if (!rowVisible(tr, currentFilter)) return false;
+    if (currentSearch && tr.textContent.toLowerCase().indexOf(currentSearch) === -1) return false;
+    return true;
+  }
+  function apply() {
+    var active = currentFilter !== "all" || currentSearch !== "";
     document.querySelectorAll("#classes details.cls").forEach(function (det) {
       var anyInClass = false;
       det.querySelectorAll(".specblock").forEach(function (sb) {
         var anyInSpec = false;
         sb.querySelectorAll("tbody tr").forEach(function (tr) {
-          var vis = rowVisible(tr, f);
+          var vis = rowMatch(tr);
           tr.style.display = vis ? "" : "none";
           if (vis) anyInSpec = true;
         });
@@ -207,17 +214,21 @@
         if (anyInSpec) anyInClass = true;
       });
       det.style.display = anyInClass ? "" : "none";
-      // auto-open on a specific filter so matches are visible; collapse on "all"
-      det.open = (f !== "all") && anyInClass;
+      det.open = active && anyInClass;
     });
+    var none = $("#search-none");
+    if (none) none.style.display = (active && !document.querySelector("#classes details.cls:not([style*='display: none'])")) ? "" : "none";
   }
   document.querySelectorAll("#filters button").forEach(function (b) {
     b.addEventListener("click", function () {
       document.querySelectorAll("#filters button").forEach(function (x) { x.classList.remove("active"); });
       b.classList.add("active");
-      applyFilter(b.getAttribute("data-f"));
+      currentFilter = b.getAttribute("data-f");
+      apply();
     });
   });
+  var search = $("#ability-search");
+  if (search) search.addEventListener("input", function () { currentSearch = search.value.trim().toLowerCase(); apply(); });
 
   // ---- expand / collapse all ----
   if ($("#expand-all")) $("#expand-all").addEventListener("click", function () {

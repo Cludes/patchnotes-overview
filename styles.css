@@ -135,6 +135,9 @@ td.note { color: var(--dim); font-size: 13px; }
 .filters button.active { color: #1a140a; background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
 .toolbtn { cursor: pointer; background: var(--panel); color: var(--dim); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: 13px; font-weight: 600; }
 .toolbtn:hover { color: var(--text); border-color: var(--faint); }
+.searchbox { flex: 1; min-width: 180px; max-width: 320px; background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 999px; padding: 7px 15px; font-size: 13px; }
+.searchbox:focus { outline: none; border-color: var(--accent); }
+.searchbox::placeholder { color: var(--faint); }
 
 details.cls { border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 12px; background: var(--panel); overflow: hidden; }
 details.cls[open] { box-shadow: var(--shadow); }
@@ -259,3 +262,13 @@ input.wt:focus { outline: none; border-color: var(--accent); }
 .net-num { font-size: 38px; font-weight: 850; line-height: 1; letter-spacing: -1px; font-variant-numeric: tabular-nums; color: var(--text); }
 .net-num.buff { color: var(--buff); }
 .net-num.nerf { color: var(--nerf); }
+
+/* ---- Tier sets ---- */
+.tierspec { margin: 12px 0 0; padding: 14px 16px; background: var(--panel-2); border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.tierspec .spechead { margin: 0 0 8px; }
+.setrow { display: flex; gap: 12px; padding: 8px 0; align-items: flex-start; }
+.setrow + .setrow { border-top: 1px solid var(--line-soft); }
+.setlabel { flex: none; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 3px 10px; border-radius: 999px; margin-top: 2px; }
+.setlabel.two { color: var(--neutral); background: var(--neutral-bg); }
+.setlabel.four { color: var(--gold); background: rgba(230,180,85,0.14); }
+.settext { color: var(--text); font-size: 14px; line-height: 1.55; }

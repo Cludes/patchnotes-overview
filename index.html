@@ -6,6 +6,16 @@
 <title>World of Warcraft: Midnight - Patch Notes Overview</title>
 <meta name="description" content="Class-change overviews for World of Warcraft: Midnight, patch by patch, with the math worked out for every number. Featuring Patch 12.1 Curse of Ula'tek." />
 <meta name="color-scheme" content="dark" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<meta name="theme-color" content="#0a0b0f" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Midnight Patch Notes" />
+<meta property="og:title" content="World of Warcraft: Midnight - Patch Notes Overview" />
+<meta property="og:description" content="Class-change overviews for WoW Midnight, patch by patch, with the math worked out for every number. Featuring Patch 12.1 Curse of Ula'tek." />
+<meta property="og:image" content="https://patchnotes-overview.pages.dev/og.png" />
+<meta property="og:url" content="https://patchnotes-overview.pages.dev/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://patchnotes-overview.pages.dev/og.png" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,6 +25,7 @@
   <span style="margin-left:auto"></span>
   <a href="patch-12-1.html">Patch 12.1</a>
   <a href="net-change.html">Net model</a>
+  <a href="tier-sets.html">Tier sets</a>
   <a href="live-tuning.html">Live tuning</a>
 </div></nav>
 
@@ -35,8 +46,8 @@
 <main class="wrap">
   <section id="patches">
     <div class="sec-head"><h2>Patches</h2><span class="kicker">Midnight &middot; 12.0 - 12.1</span></div>
-    <p class="lead">Pick a patch. The current PTR build (12.1 Curse of Ula&rsquo;tek) has the full class-by-class breakdown; earlier
-    Midnight patches are placeholders for now.</p>
+    <p class="lead">Pick a patch. The 12.1 Curse of Ula&rsquo;tek PTR has the full class-by-class breakdown, net-change model and tier sets;
+    the live patch&rsquo;s weekly tuning has its own page, and the launch patch links to its official notes.</p>
 
     <div class="patch-grid">
 
@@ -71,15 +82,30 @@
         <span class="pc-cta">View tuning &rarr;</span>
       </a>
 
-      <div class="patch-card soon" aria-disabled="true">
+      <a class="patch-card active" href="tier-sets.html">
         <div class="pc-top">
-          <span class="pc-badge">Archived</span>
+          <span class="pc-badge live"><span class="pc-pulse"></span>12.1 PTR</span>
+          <span class="pc-season">Season 2</span>
+        </div>
+        <h3>Tier set bonuses <span>all 40 specs</span></h3>
+        <p>Every Season 2 class set 2-piece and 4-piece bonus, from Blizzard&rsquo;s official 12.1 PTR development notes (not datamined).</p>
+        <div class="pc-stats">
+          <span><b>13</b> classes</span>
+          <span><b>40</b> specs</span>
+        </div>
+        <span class="pc-cta">View tier sets &rarr;</span>
+      </a>
+
+      <a class="patch-card" href="https://www.wowhead.com/news/official-patch-12-0-7-revelations-patch-notes-381833" target="_blank" rel="noopener">
+        <div class="pc-top">
+          <span class="pc-badge">Revelations</span>
           <span class="pc-season">Season 1</span>
         </div>
-        <h3>Patch 12.0.7</h3>
-        <p>A Midnight Season 1 content patch.</p>
-        <span class="pc-cta muted">Overview coming soon</span>
-      </div>
+        <h3>Patch 12.0.7 <span>current live patch</span></h3>
+        <p>The live Midnight Season 1 patch. Its ongoing class tuning is on the <b>Live tuning</b> page here; the full launch notes
+        live on Wowhead.</p>
+        <span class="pc-cta">Official notes &#8599;</span>
+      </a>
 
       <div class="patch-card soon" aria-disabled="true">
         <div class="pc-top">
@@ -87,8 +113,9 @@
           <span class="pc-season">Season 1</span>
         </div>
         <h3>Patch 12.0 <span>Midnight</span></h3>
-        <p>The Midnight expansion launch.</p>
-        <span class="pc-cta muted">Overview coming soon</span>
+        <p>The expansion launch - the full class baseline that every 12.1 change on this site is measured against. Not a discrete
+        notes set, so it&rsquo;s the reference point rather than its own page.</p>
+        <span class="pc-cta muted">Baseline reference</span>
       </div>
 
     </div>
@@ -100,6 +127,7 @@
   <div class="wrap">
     <p>A fan-made documentation snapshot of World of Warcraft: Midnight class changes. Percentages are computed from Blizzard&rsquo;s
     stated values. PTR data is subject to change.</p>
+    <p class="small muted">Last checked against Wowhead: 26 June 2026.</p>
     <p><a href="https://www.wowhead.com/news/class-changes-for-first-patch-12-1-ptr-build-dps-cooldowns-nerfed-381912" target="_blank" rel="noopener">Patch 12.1 source: Blizzard notes via Wowhead</a></p>
   </div>
 </footer>
