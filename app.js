@@ -95,6 +95,8 @@
     var sep0 = el("span", "navsep"); sep0.textContent = "/"; toc.appendChild(sep0);
     var nm = el("a", null, "Net model"); nm.href = "net-change.html"; toc.appendChild(nm);
     var sep0b = el("span", "navsep"); sep0b.textContent = "/"; toc.appendChild(sep0b);
+    var lt = el("a", null, "Live tuning"); lt.href = "live-tuning.html"; toc.appendChild(lt);
+    var sep0c = el("span", "navsep"); sep0c.textContent = "/"; toc.appendChild(sep0c);
     [["global", "Structural"], ["summary", "Glance"], ["scorecard", "Scorecard"],
      ["winners", "Buffs/Nerfs"], ["reroll", "Reroll"], ["all", "All changes"]].forEach(function (p) {
       var a = el("a", null, esc(p[1])); a.href = "#" + p[0]; toc.appendChild(a);
