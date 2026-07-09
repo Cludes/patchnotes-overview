@@ -26,11 +26,11 @@
   <div class="wrap">
     <div class="eyebrow">World of Warcraft: Midnight &middot; PTR Development Notes</div>
     <h1>Patch 12.1 &ldquo;Curse of Ula&rsquo;tek&rdquo;
-      <span class="sub">Every class change across the 12.1 PTR builds (now including the Week 2 weekly notes), with the math worked out for every number, a cooldown-squish scorecard, and a reroll read.</span>
+      <span class="sub">Every class change across the 12.1 PTR builds (through the Week 3 weekly notes), with the math worked out for every number, a cooldown-squish scorecard, and a reroll read.</span>
     </h1>
     <div class="disclaimer">
-      <b>Read this first.</b> This covers <b>PTR builds 1-2 (through Week 2)</b> and values will change. Week 2 additions carry a
-      <span class="tag wk2">Wk2</span> tag. Percentages are computed directly from Blizzard&rsquo;s
+      <b>Read this first.</b> This covers <b>PTR builds 1-3 (through the July 8 weekly notes)</b> and values will change. Later-build additions carry a
+      <span class="tag wk2">Wk2</span> / <span class="tag wk2">Wk3</span> tag. Percentages are computed directly from Blizzard&rsquo;s
       stated old &rarr; new values using <code>(new - old) / old</code>, so each line is exact. The &ldquo;biggest buffs/nerfs&rdquo; and reroll
       sections are an <b>interpretation of the direction and size</b> of those changes, not sims. Blizzard&rsquo;s stated intent for most DPS
       specs is roughly <b>net-neutral total damage</b> with a flatter profile, so a big cooldown nerf does not always mean a real DPS loss.
@@ -48,7 +48,7 @@
 
   <!-- SUMMARY -->
   <section id="summary">
-    <div class="sec-head"><h2>At a glance</h2><span class="kicker">385 change lines</span></div>
+    <div class="sec-head"><h2>At a glance</h2><span class="kicker">500 change lines</span></div>
     <div class="stats" id="stats"></div>
     <p class="small muted" style="margin-top:11px">Counts are every individual change line, tagged by gameplay direction. Most &ldquo;nerf&rdquo;
     lines are paired with a compensating steady-state buff on the same spec, which is why the totals lean green.</p>
@@ -120,9 +120,11 @@
       </div>
     </div>
     <div class="card" style="margin-top:14px">
-      <b>Changed since build 1:</b> <span class="muted"><b>Frost DK</b> and <b>Enhancement Shaman</b> were barely touched in build 1 but
-      got a full damage retune in <span class="tag wk2">Wk2</span>. <b>Affliction &amp; Demonology Warlock</b> still have no spec-specific
-      changes across either build (Warlock&rsquo;s only edits are class-wide/Hellcaller).</span>
+      <b>Build history:</b> <span class="muted"><b>Frost DK</b> and <b>Enhancement Shaman</b> were barely touched in build 1 but got full
+      retunes in <span class="tag wk2">Wk2</span>. <span class="tag wk2">Wk3</span> is a big raid-test tuning pass: broad nerfs to
+      over-performers (Frost DK &minus;10% all + Icy Death Torrent &minus;35%, Unholy, Ret) and buffs to under-performers (Marksmanship,
+      Holy Paladin and Holy Priest got their first PTR changes, Arms auto +100%). Only <b>Demonology Warlock</b> still has no
+      spec-specific change across all three builds.</span>
     </div>
   </section>
 
@@ -154,6 +156,7 @@
         <button data-f="nerf">Nerfs</button>
         <button data-f="structural">Reworks &amp; new</button>
         <button data-f="wk2">Week 2</button>
+        <button data-f="wk3">Week 3</button>
       </div>
       <button class="toolbtn" id="expand-all">Expand all</button>
       <button class="toolbtn" id="collapse-all">Collapse all</button>
@@ -169,7 +172,7 @@
   <div class="wrap">
     <p>Documentation snapshot of Blizzard&rsquo;s Patch 12.1 PTR class-change notes (builds 1-2). Percentages computed from the stated old/new
     values; see <code>verify.mjs</code> in the repo. PTR data is subject to change.</p>
-    <p class="small muted">Last checked against Wowhead: 26 June 2026.</p>
+    <p class="small muted">Last checked against Wowhead: 9 July 2026.</p>
     <p id="footer-src"></p>
   </div>
 </footer>

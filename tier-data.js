@@ -7,9 +7,9 @@ window.TIERSETS = [
     "specs": [
       {
         "spec": "Blood",
-        "set2": "Your attack speed is increased by 15%, and Crimson Scourge's chance to occur is increased by an additional 5%.",
-        "set4": "Crimson Scourge increases the damage of your next Death and Decay by 100%, and grants 5% critical strike chance for 8 seconds when consumed.",
-        "note": ""
+        "set2": "When you Death Strike, gain a stack of Blood Debt, increasing Strength by 0.5%, up to 5%. When Blood Debt reaches 10 stacks, your next Marrowrend consumes it granting 10% Strength for 10 seconds.",
+        "set4": "When consuming Blood Debt, your next Marrowrend generates 3 additional Bone Shield and deals Shadow damage to your target and nearby enemies.",
+        "note": "Redesigned and implemented in Week 3 (replacing the earlier Crimson Scourge design)."
       },
       {
         "spec": "Frost",

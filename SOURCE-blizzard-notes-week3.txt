@@ -1,0 +1,226 @@
+CLASSES
+DEATH KNIGHT
+Unholy
+Developers’ notes: In an upcoming hotfix to the PTR, we’re resolving a bug that affected Unholy Death Knight’s tuning and making additional adjustments to our latest tuning pass as a result.
+The overall damage reduction from our latest tuning pass has been adjusted from 8% to 3%.
+Resolved an issue causing Nazgrim’s Conquest to grant additional Strength when Magus of the Dead is sacrificed for Lord of the Dead.
+Nazgrim’s Conquest will no longer grant Strength from critters and low level targets.
+Here is a quick summary of some of the biggest changes with the Patch. For specific class tuning, find your spec below:
+Scalecommander's Wingleader cooldown reduction has been reworked which should result in a massive nerf.
+Windwalker defensives buffed.
+Protection Paladin talent position changes
+Blizzard
+View Original
+Hello testers! The Curse of Ula’tek PTR has been updated with the following changes:
+LAIRS
+The Tidebound Grotto on Mythic difficulty is available for testing this week.
+THE VENOMOUS ABYSS RAID
+Mythic raid testing begins this week. Raid testing details can be found here: The Venomous Abyss Raid Testing Schedule
+SEASON 2
+King’s Rest, Ruby Life Pools, and Temple of Sethraliss on Mythic 0 and Mythic+ difficulties are available for testing this week. Please leave any feedback in the Feedback: Midnight Season 2 Dungeon Testing July 7th - July 13th thread.
+CLASSES
+Developers’ notes: This week’s PTR tuning is focused on our data from our first Heroic raid testing. We have adjusted over-performing and under-performing specs to bring them closer to our expected target.
+DEATH KNIGHT
+Blood
+The previously announced Blood Death Knight tier set designs are now implemented and ready for feedback:
+The Venomous Abyss 2-Set Bonus – When you Death Strike, gain a stack of Blood Debt, increasing Strength by 0.5%, up to 5%. When Blood Debt reaches 10 stacks, your next Marrowrend consumes it granting 10% Strength for 10 seconds.
+The Venomous Abyss 4-Set Bonus – When consuming Blood Debt, your next Marrowrend generates 3 additional Boneshield and deals Shadow damage to your target and nearby enemies.
+Frost
+All ability damage reduced by 10%.
+Melee damage reduced by 20%.
+Icy Death Torrent damage reduced by 35%.
+Remorseless Winter damage reduced by 30%.
+Obliterate damage reduced by 10%.
+Unholy
+All damage reduced by 8%.
+Lord of the Dead damage reduced by 25%.
+Magus of the Dead damage reduced by 15%.
+All Lesser Ghoul damage reduced by 15%.
+Putrefy damage reduced by 15%.
+Necrotic Coil damage reduced by 18%.
+Pestilence damage reduced by 25%.
+Infected Claw damage reduced by 25%.
+Virulent Plague damage reduced by 25%.
+Hero Talents
+Rider of the Apocalypse
+Whitemane Death Coil damage reduced by 25%.
+Whitemane Undeath damage reduced by 25%.
+DEMON HUNTER
+Devourer
+All ability damage increased by 10%.
+Havoc
+All ability damage reduced by 5%. Does not affect PvP combat.
+DRUID
+Balance
+Developers’ notes: We’re increasing Balance’s damage in all content. Their spenders, Starsurge and Starfall, are doing much more damage this season, which is intended, but there is room for their DoTs and builder damage to come up.
+All damage dealt increased by 3.5%.
+Moonfire damage increased by 10%.
+Sunfire damage increased by 10%.
+Shooting Stars damage increased by 10%.
+Wrath damage increased by 10%.
+Starfire damage increased by 20%.
+Umbral Intensity increases Wrath and Starfire damage by 12% (was 10%).
+Meteorites damage increased by 15%.
+Apex Talent: Ascendant Eclipses’ Solar Bolt and Lunar Bolt damage increased by 10%.
+The Venomous Abyss 2-Set Bonus – Instant Starfall damage increased by 15%.
+Hero Talents
+Keeper of the Grove
+Sylvan Beckoning Dryad’s Starfall damage increased to 250% effectiveness (was 200%).
+Spirit of the Thicket increases Starfall damage by 18% (was 12%).
+Feral
+Cooldown Manager updated so elements show the “empowered” icon versions for instances of DoTs like Rake and Rip that have been enhanced by Tiger’s Fury.
+Restoration
+Mastery: Harmony healing bonus increased by 15%.
+The Venomous Abyss 2-Set Bonus – Genesis increases healing over time by 15% (was 25%).
+The Venomous Abyss 4-Set Bonus has been redesigned – Nature’s Swiftness, Tranquility, and Ironbark have a 100% chance to grant Genesis, and its duration is increased by 4 seconds.
+EVOKER
+Hero Talents
+Scalecommander
+Developers’ notes: Wingleader’s cooldown reduction mechanic strongly incentivized spreading Bombardment applications across multiple targets. We feel that this gameplay is unintuitive in isolation, and additionally creates unhealthy behaviors such as Disintegrate clipping and Mass Disintegrate/Eruption pooling. This redesign is intended to retain the multitarget focus of the talent, while addressing those issues. We are increasing some of Scalecommander’s sources of area damage to compensate for the lessened cooldown reduction the new Wingleader will provide, and will be keeping a close eye on Devastation and Augmentation’s performance over the course of PTR to make additional adjustments as needed.
+Wingleader has been redesigned – Mass Disintegrate/Mass Eruption reduces the remaining cooldown of Deep Breath/Breath of Eons by 0.5 seconds/1 second for each target struck.
+Command Squadron’s Pyre damage increased by 40%.
+Maneuverability’s damage over time increased by 40%.
+Augmentation
+Hero Talents
+Chronowarden
+Double-time has been updated – If Ebon Might reapplies Double-time while it is already active, Double-time’s duration is extended instead of overwriting the previous Double-time effect.
+Preservation
+Developers’ notes: Now that Dream Breath’s healing over time is more powerful at a baseline, we’re reducing some of the supporting talents that are making Dream Breath a little too dominant in Preservation’s breakdown. Additionally, we’re updating Consume Flame to be much more relevant and impactful, which it should be as Flameshaper’s capstone talent.
+Inner Flame increases periodic healing by 50% (was 60%).
+Spiritual Clarity reduces the cooldown of Dream Breath by 6 seconds (was 10 seconds).
+Hero Talents
+Flameshaper
+Expanded Lungs increases the healing of Dream Breath by 20% (was 30%).
+Conduit of Flame increases critical chance by 10% (was 15%). Does not affect Devastation Evoker.
+Fulminous Roar causes Fire Breath and Dream Breath to deal their damage 15% more often (was 20%). Does not affect Devastation Evoker.
+Fluttering Seedlings can now trigger Consume Flame.
+Emerald Blossom and Fluttering Seedlings now prefer to heal injured allies with Dream Breath active while talented into Consume Flame.
+Consume Flame heals for 300% of the amount consumed (was 200%).
+HUNTER
+Beast Mastery
+Developers’ notes: We’re lowering the value of several Cobra Shot talent modifiers in this update, but also increasing the damage of Cobra Shot’s base spell. We will continue to monitor Beast Mastery’s throughput and damage profiles as the PTR continues.
+Auto Shot damage increased by 20%.
+Cobra Shot damage increased by 30%.
+Serpentine Strikes now increases Cobra Shot’s critical strike damage by 20% (was 50%).
+Cobra Senses now increases Cobra Shot’s damage by 10% (was 35%).
+Barbed Shot damage reduced by 12%.
+The Venomous Abyss 4-Set Bonus – Now increases Cobra Shot’s damage against a single target by 15% per stack (was 30%).
+Hero Talents
+Pack Leader
+Hogstrider now increases the damage of your next Cobra Shot by 100% (was 200%).
+Hoof and Blade now increases the bonus Cobra Shot damage from Hogstrider by 25% (was 50%).
+Marksmanship
+Developers’ notes: We’re making some bigger tuning changes to Marksmanship Hunters this PTR update to bring their damage up after all of the changes made so far in the Curse of Ula’tek update.
+Auto Shot damage increased by 20%.
+Rapid Fire damage increased by 20%.
+Steady Shot damage increased by 50%.
+Volley damage increased by 20%.
+Arcane Shot damage increased by 15%.
+Multi-Shot damage increased by 80%.
+Kill Shot damage increased by 25%.
+Hero Talents
+Dark Ranger
+Black Arrow damage increased by 25%.
+MAGE
+Fire
+All ability damage increased by 12%.
+Pyroclasm duration increased to 20 seconds (was 15 seconds).
+Frost
+The Venomous Abyss 4-Set Bonus has been updated –
+Now generates 5 Icicles over 1 second when it triggers, rather than immediately granting the Glacial Spike! effect. Tooltip updated to match.
+RPPM increased to 2.00 (was 1.00).
+Shatter damage bonus reduced to 10% (was 15%).
+MONK
+Mistweaver
+Spinning Crane Kick damage increased by 10%.
+Resolved an issue that caused Temple Training’s Spinning Crane Kick damage increase to apply to Mistweaver.
+Windwalker
+Combat Wisdom now increases stamina by 5%.
+Calming Presence now reduces damage taken by 10% (was 6%).
+PALADIN
+Hero Talents
+Lightsmith
+Divine Guidance has been updated – For each Holy Power ability cast, your next Consecration deals Holy damage immediately, split across all enemies. Up to 3 nearby allies are each healed for a percentage of the total damage.
+Holy
+Developers’ notes: We are making a few updates to Holy Paladin with the goal of increasing talent diversity and overall performance.
+The Venomous Abyss 2-Set Bonus – Now increases the effectiveness of Infusion of Light by 100% (was 75%).
+All healing increased by 8%.
+Word of Glory healing increased by 5%.
+Eternal Flame healing increased by 5%.
+Holy Shock healing increased by 10%.
+Ringing of the Heavens now casts Divine Toll at 200% effectiveness (was 100%).
+Truth Prevails healing increased by 30%.
+Saved by the Light absorb increased by 50%.
+Tirion’s Devotion now reduces the cooldown of Lay on Hands by 40% (was 30%).
+Awakening now activates on a 15% chance (was 10%).
+Glistening Radiance now absorbs 2% of max health, up to 6% (was 1%, up to 5%).
+Overflowing Light now transfers 50% of Holy Shock’s healing (was 30%).
+Call of the Righteous now decreases the duration of Avenging Wrath by 3 seconds (was 4 seconds) and decreases the duration of Avenging Crusader by 2 seconds per point (was 2.5 seconds).
+Protection
+Fixed an issue where Blessed Word’s increase to Word of Glory healing was incorrectly applying without being talented.
+Valiant Crusade no longer cancels on death.
+Blessed Word’s overhealing effect now works on any target.
+Guardian of Ancient Kings initial cooldown increased to 8 seconds.
+Adjusted many talent locations.
+Improved Ardent Defender now applies a debuff to indicate when fatal damage has been sustained.
+Retribution
+Developers’ notes: We are iterating on the tier set to address some pain points while retaining its identity.
+The Venomous Abyss 4-Set Bonus has been updated – Consuming Divine Purpose grants Divine Arbiter, empowering your other Holy Power spenders to unleash an arbiter of light at their primary target, dealing Holy damage and Holy damage to enemies within 8 yards. Cannot occur while Divine Arbiter is active.
+The Venomous Abyss 4-Set Bonus – Divine Arbiter damage increased by 35%.
+All damage reduced by 6%.
+PRIEST
+Discipline
+Developers’ notes: This tuning package is intended to reduce the impact of Void Shield and distribute its power to other weaker spells in the rotation. This should better balance Discipline’s healing kit and remove the overbearing focus on triggering Void Shield.
+Void Shield absorption reduced by 30%.
+Ultimate Penitence damage and healing increased by 30%.
+Greater Smite duration increased to 4 seconds (was 2 seconds).
+All healing and absorption increased by 10%.
+Atonement heals for 32% of damage done (was 30%).
+Holy
+All healing increased by 10%.
+Benediction mana cost reduced by 30%.
+Apotheosis now reduces the mana cost of Holy Words by 70% (was 50%).
+Shadow
+All ability damage done increased by 8%.
+ROGUE
+Subtlety
+All ability damage reduced by 8%. Does not affect PvP combat.
+SHAMAN
+Enhancement
+Fixed an issue causing the Venomous Abyss 4-set bonus aura Short Circuit to not be consumed.
+Fixed an issue causing Crash Lightning (Unleashed) to only strike a single target.
+The Venomous Abyss 4-Set bonus aura Short Circuit now increases the damage of Crash Lightning weapon enhancement effect. This bonus will be calculated as the average when there are multiple stacks active.
+Restoration
+Acid Rain damage increased by 50%, but now causes damage every 2 seconds (was 1 second).
+Fixed an issue where Healing Rain was not causing immediate healing when casting the spell.
+Fixed an issue where both Acid Rain and Healing Rain were not properly granting a “patrial tick” when a Healing Rain naturally expired.
+WARLOCK
+Affliction
+The Venomous Abyss 2-Set Bonus has been updated – Seed of Corruption now applies Unstable Affliction at 20% effectiveness to your target (was 50%).
+Developers’ notes: We are making this adjustment to avoid making Seed of Corruption the universal tool for spending Soul Shards. We want Unstable Affliction to remain the spell Affliction Warlocks use in single-target encounters.
+Destruction
+All damage increased by 10%.
+WARRIOR
+Arms
+Developers’ notes: Arms is trailing behind in single-target damage, especially Slayer, so we’re sending overall single-target damage buffs that lean into Slayer’s wheelhouse.
+The Venomous Abyss 2-set bonus has been updated – Mortal Strike and Execute damage increased by 10% (was only Mortal Strike). Other effects unchanged.
+Melee auto-attack damage increased by 100%.
+Hero Talents
+Colossus
+No Stranger to Pain has been updated – Damage prevented by each use of Ignore Pain increased by 30% (was 20%).
+Dominance of the Colossus has been updated – Enemies damaged by Demolish take 20% reduced damage from you for 10 seconds (was 10%).
+Slayer
+Slayer’s Dominance has been updated – Chance to trigger a Slayer’s strike increased to 25% (was 15%).
+Fury
+Developers’ notes: The intent behind Bloodbath is that the majority of the damage bonus comes from the bleed. The existing tuning hasn’t been delivering on that, so we’re moving some of Bloodbath’s increased damage from the initial hit to the bleed. This change should be net neutral for Bloodbath’s overall damage.
+Bloodbath initial damaged reduced by 12%.
+Bloodbath bleed damage increased by 300%.
+Protection
+Developers’ notes: The Protection 4-set bonus bleed is currently underperforming, so we’re buffing it up. We also feel that Protection Warriors, could use a small bump in overall survivability, and the performance gap between Mountain Thane and Colossus is currently too wide and we’d like to bring Colossus’s performance closer to Mountain Thane.
+The Venomous Abyss 4-set bonus has been updated – Bloody Rebuke Bleed damage increased by 100%.
+Unyielding increases the damage reduction bonus of Defensive Stance by 6% (was 4%).
+Hero Talents
+Colossus
+No Stranger to Pain has been updated – Damage prevented by each use of Ignore Pain increased by 30% (was 20%).
+Practiced Strikes has been updated – Shield Slam generates an additional 4 Rage (was 3).
+Dominance of the Colossus has been updated – Enemies damaged by Demolish take 20% reduced damage from you for 10 seconds (was 10%).
