@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Patch 12.1 Datamined Changes - Build 68569</title>
+<meta name="description" content="Datamined Patch 12.1 class and tier-set changes from PTR build 68569: what the tooltip coefficients reveal, how they line up with Blizzard's official notes, and why datamined is not final." />
+<meta name="color-scheme" content="dark" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<meta name="theme-color" content="#0a0b0f" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Midnight Patch Notes" />
+<meta property="og:title" content="Patch 12.1 Datamined Changes - Build 68569" />
+<meta property="og:description" content="Datamined Patch 12.1 class and tier-set changes from PTR build 68569, cross-checked against Blizzard's official notes." />
+<meta property="og:image" content="https://patchnotes-overview.pages.dev/og.png" />
+<meta property="og:url" content="https://patchnotes-overview.pages.dev/datamined" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://patchnotes-overview.pages.dev/og.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="toc"><div class="wrap">
+  <a href="./" class="brand">Midnight Patch Notes</a>
+  <span style="margin-left:auto"></span>
+  <a href="patch-12-1.html">Patch 12.1</a>
+  <a href="net-change.html">Net model</a>
+  <a href="tier-sets.html">Tier sets</a>
+  <a href="datamined.html" style="color:var(--accent)">Datamined</a>
+  <a href="live-tuning.html">Live tuning</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Patch 12.1 &ldquo;Curse of Ula&rsquo;tek&rdquo; &middot; PTR build 68569</div>
+    <h1>Datamined changes
+      <span class="sub">Numbers pulled straight from the game files of the next PTR build, cross-checked against Blizzard&rsquo;s official notes.</span>
+    </h1>
+    <div class="disclaimer">
+      <b>Datamined, not confirmed.</b> Everything on this page comes from PTR build <b>68569</b> game files, <b>not</b> from Blizzard&rsquo;s
+      Development Notes. Datamined tooltip values are real data, but they are work-in-progress: some are placeholders, some get reverted, and
+      bug-fix / description-only edits are easy to misread. The official, higher-confidence numbers live on the
+      <a href="patch-12-1.html">main breakdown</a> and <a href="tier-sets.html">tier sets</a> pages. This page is kept separate on purpose.
+      Every percentage below is computed in code from the datamined old&rarr;new values, never hand-typed.
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 1. Corroboration -->
+  <section id="checks-out">
+    <div class="sec-head"><h2>1. The datamining checks out</h2><span class="kicker">datamined vs official</span></div>
+    <p class="lead">The strongest reason to trust this build: where it overlaps the official Week 3 notes, the datamined tooltip
+    coefficients reproduce Blizzard&rsquo;s stated percentages <b>exactly</b>. Frost Death Knight is the clearest case - the raw
+    attack-power coefficients in the files compute to the same numbers Blizzard published.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Spec</th><th>Ability</th><th>Datamined coefficient</th><th style="text-align:center">Computed change</th><th style="text-align:center">Official Week 3</th></tr></thead>
+        <tbody>
+          <tr><td>Frost DK</td><td>Icy Death Torrent</td><td>215.424% &rarr; 140.026% AP</td><td style="text-align:center"><span class="tag nerf">-35%</span></td><td style="text-align:center"><span class="muted">-35%</span></td></tr>
+          <tr><td>Frost DK</td><td>Remorseless Winter</td><td>18.066% &rarr; 12.6462% AP</td><td style="text-align:center"><span class="tag nerf">-30%</span></td><td style="text-align:center"><span class="muted">-30%</span></td></tr>
+          <tr><td>Frost DK</td><td>Obliterate</td><td>88.8308% &rarr; 79.9477% AP</td><td style="text-align:center"><span class="tag nerf">-10%</span></td><td style="text-align:center"><span class="muted">-10%</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:11px">When the files and the notes agree to three decimal places, the datamining method is
+    sound - so the datamined-only findings below are worth reading, with the caveat that they have not been written into official notes.</p>
+  </section>
+
+  <!-- 2. Headline datamined-only findings -->
+  <section id="headline">
+    <div class="sec-head"><h2>2. Headline datamined findings</h2><span class="kicker">not yet in official notes</span></div>
+    <p class="lead">The biggest structural changes in build 68569 are design edits, not just number tweaks:</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-eyebrow"><span class="tag dm">Datamined</span> Evoker</div>
+        <h3>Scalecommander Wingleader reworked</h3>
+        <p>The hero talent that reduces Breath-spell cooldowns was heavily cut. Devastation&rsquo;s Bombardments now reduce Deep Breath by
+        0.5 sec per target struck, <b>capped at 1.5 sec</b>; Preservation / Augmentation&rsquo;s Mass Eruption reduces Breath of Eons by
+        1.0 sec per target, <b>capped at 3.0 sec</b>. Previously uncapped - a large nerf to Breath uptime.</p>
+      </div>
+      <div class="card">
+        <div class="card-eyebrow"><span class="tag dm">Datamined</span> Paladin</div>
+        <h3>Protection talent tree reorganized</h3>
+        <p>The Protection Paladin talent tree layout was rearranged in this build. A structural change to talent positioning rather than a
+        raw damage number, so no single percentage - but it changes what builds are reachable.</p>
+      </div>
+      <div class="card">
+        <div class="card-eyebrow"><span class="tag dm">Datamined</span> All classes</div>
+        <h3>A big wave of tier-set tuning</h3>
+        <p>This build touched many Season 2 class sets - values, redesigns, and a fully rebuilt Blood DK set. The confirmed
+        <i>designs</i> are on the <a href="tier-sets.html">tier sets</a> page; the datamined <i>numeric</i> tuning is in section 4 below.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Spec-wide auras -->
+  <section id="spec-auras">
+    <div class="sec-head"><h2>3. Datamined spec-wide damage tuning</h2><span class="kicker">class aura old &rarr; new</span></div>
+    <p class="lead">Several specs have a single &ldquo;Modifies Damage/Healing Done&rdquo; class aura that scales all their damage. Build 68569
+    shifts these. The <b>effective change</b> is the ratio of the new multiplier to the old one - e.g. a +41% aura going to +46% is
+    <code>1.46 / 1.41 = +3.5%</code> to everything the aura touches. These are datamined and may not match the final official notes.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Spec</th><th>Class-aura value</th><th style="text-align:center">Effective all-damage change</th></tr></thead>
+        <tbody>
+          <tr><td>Devourer Demon Hunter</td><td>+10% &rarr; +21%</td><td style="text-align:center"><span class="tag buff">+10%</span></td></tr>
+          <tr><td>Mistweaver Monk (Spinning Crane Kick)</td><td>+166% &rarr; +193%</td><td style="text-align:center"><span class="tag buff">+10.2%</span></td></tr>
+          <tr><td>Balance Druid</td><td>+41% &rarr; +46%</td><td style="text-align:center"><span class="tag buff">+3.5%</span></td></tr>
+          <tr><td>Havoc Demon Hunter</td><td>+22% &rarr; +16%</td><td style="text-align:center"><span class="tag nerf">-4.9%</span></td></tr>
+          <tr><td>Unholy Death Knight</td><td>-20% &rarr; -26%</td><td style="text-align:center"><span class="tag nerf">-7.5%</span></td></tr>
+          <tr><td>Frost Death Knight</td><td>-2% &rarr; -12%</td><td style="text-align:center"><span class="tag nerf">-10.2%</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:11px">Marksmanship Hunter&rsquo;s Black Arrow was also boosted in the files - direct damage
+    +20% &rarr; +50% (<b>+25%</b> effective) and its damage-over-time +50% &rarr; +87% (<b>+24.7%</b> effective).</p>
+  </section>
+
+  <!-- 4. Tier tuning -->
+  <section id="tier-tuning">
+    <div class="sec-head"><h2>4. Datamined tier-set tuning</h2><span class="kicker">values changed in this build</span></div>
+    <p class="lead">A sample of the Season 2 class-set numbers that moved in build 68569. The full confirmed set <i>designs</i> are on the
+    <a href="tier-sets.html">tier sets</a> page; these are the datamined value edits.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Set</th><th>Piece</th><th>Change</th><th style="text-align:center">Direction</th></tr></thead>
+        <tbody>
+          <tr><td>Protection Warrior</td><td>4-piece</td><td>Ravager / free-Revenge bleed 152.372% &rarr; 304.745% AP (+100%)</td><td style="text-align:center"><span class="tag buff">Buff</span></td></tr>
+          <tr><td>Holy Paladin</td><td>2-piece</td><td>Infusion of Light bonus to Flash of Light and Greater Judgment 75% &rarr; 100%</td><td style="text-align:center"><span class="tag buff">Buff</span></td></tr>
+          <tr><td>Balance Druid</td><td>2-piece</td><td>Starfall instant Astral damage 26.4% &rarr; 30.4% SP</td><td style="text-align:center"><span class="tag buff">Buff</span></td></tr>
+          <tr><td>Beast Mastery Hunter</td><td>4-piece</td><td>Stomp&rsquo;s Cobra Shot extra damage 30% &rarr; 15% per stack</td><td style="text-align:center"><span class="tag nerf">Nerf</span></td></tr>
+          <tr><td>Frost Mage</td><td>4-piece</td><td>Shatter damage bonus 15% &rarr; 10% (plus a Glacial Spike rework)</td><td style="text-align:center"><span class="tag nerf">Nerf</span></td></tr>
+          <tr><td>Restoration Druid</td><td>2-piece</td><td>Genesis heal-over-time bonus 25% &rarr; 15%</td><td style="text-align:center"><span class="tag nerf">Nerf</span></td></tr>
+          <tr><td>Affliction Warlock</td><td>4-piece</td><td>Seed of Corruption applies Unstable Affliction at 50% &rarr; 20% effectiveness</td><td style="text-align:center"><span class="tag nerf">Nerf</span></td></tr>
+          <tr><td>Blood Death Knight</td><td>2 &amp; 4-piece</td><td>Set fully redesigned around a new &ldquo;Blood Debt&rdquo; Strength-stacking mechanic</td><td style="text-align:center"><span class="tag neutral">Rework</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 5. Why not final -->
+  <section id="not-final">
+    <div class="sec-head"><h2>5. Why datamined is not final</h2><span class="kicker">read before quoting these</span></div>
+    <p class="lead">Datamined values are a snapshot of a build in progress. They can be internal test values, placeholders, or changes that
+    never ship. Unholy Death Knight is the cautionary example in this very build:</p>
+    <div class="card">
+      <p style="margin:0 0 8px"><b>Unholy DK, build 68569.</b> The files show the spec-wide aura dropping from <b>-20% to -26%</b> and a
+      brand-new <b>-25% Death Coil</b> effect - both large nerfs. Neither is written up in an official Development Note. They may be a
+      genuine incoming nerf, a mid-tuning test value, or something that gets softened or reverted before the patch is final.</p>
+      <p class="small muted" style="margin:0">Rule of thumb for this page: trust it most where it <b>agrees with the official notes</b>
+      (section 1), treat the datamined-only numbers (sections 2-4) as <b>strong signal, not gospel</b>, and expect the specifics to move
+      before 12.1 ships.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Datamined from Patch 12.1 PTR build 68569 via Wowhead. All percentages computed in code from the datamined old&rarr;new values.
+    Datamined data is unconfirmed and subject to change.</p>
+    <p class="small muted">Last checked against Wowhead: 9 July 2026.</p>
+    <p><a href="https://www.wowhead.com/news/patch-12-1-ptr-datamined-class-and-tier-set-changes-build-68569-class-tuning-and-382116" target="_blank" rel="noopener">Source: datamined class and tier set changes, build 68569 (Wowhead)</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

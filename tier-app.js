@@ -12,6 +12,8 @@
   var toc = $("#toc");
   if (toc) {
     var back = el("a", null, "&larr; Patches"); back.href = "./"; back.style.color = "var(--accent)"; back.style.fontWeight = "600"; toc.appendChild(back);
+    var sepd = el("span", "navsep"); sepd.textContent = "/"; toc.appendChild(sepd);
+    var dm = el("a", null, "Datamined"); dm.href = "datamined.html"; toc.appendChild(dm);
     var sep = el("span", "navsep"); sep.textContent = "/"; toc.appendChild(sep);
     T.forEach(function (cls) { var a = el("a", null, esc(cls.name)); a.href = "#cls-" + slug(cls.name); a.style.color = cls.color; a.addEventListener("click", function(){ var d=$("#cls-"+slug(cls.name)); if(d) d.open=true; }); toc.appendChild(a); });
   }

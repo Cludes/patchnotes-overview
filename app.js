@@ -98,6 +98,8 @@
     var sep0b = el("span", "navsep"); sep0b.textContent = "/"; toc.appendChild(sep0b);
     var ts = el("a", null, "Tier sets"); ts.href = "tier-sets.html"; toc.appendChild(ts);
     var sep0d = el("span", "navsep"); sep0d.textContent = "/"; toc.appendChild(sep0d);
+    var dm = el("a", null, "Datamined"); dm.href = "datamined.html"; toc.appendChild(dm);
+    var sep0e = el("span", "navsep"); sep0e.textContent = "/"; toc.appendChild(sep0e);
     var lt = el("a", null, "Live tuning"); lt.href = "live-tuning.html"; toc.appendChild(lt);
     var sep0c = el("span", "navsep"); sep0c.textContent = "/"; toc.appendChild(sep0c);
     [["global", "Structural"], ["summary", "Glance"], ["scorecard", "Scorecard"],
